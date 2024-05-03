@@ -32,7 +32,7 @@ const Hero = () => {
           <span className="font-bold">lowest fees possible.</span>
         </h1>
       </div>
-      <div className="text-[#ffffff] smd:text-[18px] lg:text-[20px] font-medium smd:mt-[25px] lg:mt-[50px]">
+      <div className="text-[#ffffff] smd:text-[18px] lg:text-[20px] font-SFMedium smd:mt-[25px] lg:mt-[50px]">
         <h1>Send Money. The Fastest Way Possible.</h1>
       </div>
       <div className="mt-[35px] relative max-w-[560px]">
@@ -52,14 +52,14 @@ const Hero = () => {
             name="location"
           />
         </label>
-        <div className="text-[#ffffff] text-[12px] font-bold bg-[#196BFE] text-center rounded-lg w-[55px] h-[20px] absolute top-[-8px] left-[20px]">
+        <div className="text-[#ffffff] text-[12px] font-bold bg-[#196BFE] text-center rounded-lg w-[55px] h-[20px] absolute top-[-9px] left-[20px]">
           <h1>From</h1>
         </div>
         <div className="text-[#ffffff] text-[12px] font-bold bg-[#196BFE] text-center rounded-lg w-[55px] h-[20px] absolute smd:top-[61px] lg:top-[70px] left-[20px]">
           <h1>To</h1>
         </div>
         <div className="mt-[30px] flex justify-between">
-          <button className="border border-[#D9D9D9] rounded-md text-[#ffffff] text-center smd:w-[200px] h-[40px]">
+          <button className="border border-[#D9D9D9] rounded-md text-[#ffffff] font-SFRegular text-center smd:w-[200px] h-[40px]">
             Open an Account
           </button>
           <button className="bg-[#196BFE] rounded-md text-[#ffffff] text-center smd:w-[145px] h-[40px]">

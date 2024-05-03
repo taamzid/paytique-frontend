@@ -3,6 +3,7 @@ import NavBar from "./NavBar/NavBar";
 import Hero from "./Hero/Hero";
 import Affiliate from "./Affiliate/Affiliate";
 import heroImg from "../../assets/home/hero/hero-img.svg";
+import Find from "./Find/Find";
 
 const Home = () => {
   return (
@@ -14,7 +15,8 @@ const Home = () => {
         </div>
         <img src={heroImg} className="h-full w-full" />
       </div>
-      {/* <Affiliate /> */}
+      <Affiliate />
+      <Find />
     </div>
   );
 };

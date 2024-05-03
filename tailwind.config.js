@@ -6,7 +6,13 @@ export default {
       smd: "1025px",
       lg: "1441px",
     },
-    extend: {},
+    extend: {
+      fontFamily: {
+        SFRegular: ["SFRegular"],
+        SFMedium: ["SFMedium"],
+        SFBold: ["SFBold"],
+      },
+    },
   },
   plugins: [],
 };
