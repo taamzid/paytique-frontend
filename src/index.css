@@ -1,4 +1,18 @@
+@font-face {
+  font-family: "SFRegular";
+  src: url("src/fonts/SFPRODISPLAYREGULAR.OTF") format("OTF");
+}
+
+@font-face {
+  font-family: "SFMedium";
+  src: url("src/fonts/SFPRODISPLAYMEDIUM.OTF") format("OTF");
+}
+
+@font-face {
+  font-family: "SFBold";
+  src: url("src/fonts/SFPRODISPLAYBOLD.OTF") format("OTF");
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
