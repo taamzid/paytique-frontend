@@ -6,7 +6,11 @@ export default {
       smd: "1025px",
       lg: "1441px",
     },
-    extend: {},
+    extend: {
+      colors: {
+        background: "rgba(25, 107, 254, 0.06)", // Correct syntax for defining RGBA color
+      },
+    },
   },
   plugins: [],
 };

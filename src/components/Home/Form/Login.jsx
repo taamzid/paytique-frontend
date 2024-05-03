@@ -15,7 +15,7 @@ const Login = () => {
       >
         <img src={logo} alt="Placeholder" className="pt-14 pb-32" />
         <img src={card} alt="Placeholder" className="" />
-        <h1 className="text-xl mt-4   text-2xl	">
+        <h1 className="text-xl mt-4   text-2xl	 ">
           Find The Best Way To Send Your Money
         </h1>
         <p className="text-sm">
