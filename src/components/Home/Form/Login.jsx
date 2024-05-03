@@ -15,7 +15,7 @@ const Login = () => {
       >
         <img src={logo} alt="Placeholder" className="pt-14 pb-32" />
         <img src={card} alt="Placeholder" className="" />
-        <h1 className="text-xl mt-4   text-2xl	">
+        <h1 className="text-xl mt-4   text-2xl	 ">
           Find The Best Way To Send Your Money
         </h1>
         <p className="text-sm">
@@ -50,7 +50,7 @@ const Login = () => {
           <div className="flex items-center mt-2">
             <input type="checkbox" id="terms" className="mr-2" />
             <label htmlFor="terms" className="text-sm">
-              I accept the Paytique Financial Agreement
+              I accept the Paytique Financial Agreement hleopopdsxzd
             </label>
           </div>
           <div className="mt-4 space-x-4 flex justify-between">
