@@ -11,29 +11,33 @@ const Type = () => {
   };
 
   return (
-    <div className="grid grid-cols-2 font-sfpro-display">
+    <div className="grid grid-cols-2 ">
       {/* Left section with image, text, and button */}
       <div
-        className="bg-cover sm:pl-28 lg:pl-16 pt-40 text-white"
+        className="bg-cover sm:pl-28 lg:pl-16 pt-40  text-white  pb-64"
         style={{ backgroundImage: `url(${leftBackground})` }}
       >
-        <img src={logo} alt="Placeholder" className="pt-14 pb-32" />
-        <img src={card} alt="Placeholder" />
-        <h1 className="text-xl mt-4 text-2xl">
-          Find The Best Way To Send Your Money
+        <img src={logo} alt="Placeholder" className="-pt-14 pb-32" />
+        <img src={card} alt="Placeholder" className="" />
+        <h1 className=" text-[64.84px] mt-4	 font-medium ">
+          Find The Best Way <br /> To Send Your Money
         </h1>
-        <p className="text-sm">
+        <p className="lg:text-[21.84px] font-SFMedium mt-5 ">
           If you are seeing this than this might be good.
         </p>
-        <p className="text-sm">Don’t Have an Account? </p>
-        <button className="mt-4 bg-white text-black px-4 py-2 rounded hover:bg-gray-200">
+        <p className="lg:text-[21.84px] font-SFMedium mt-24">
+          Don’t Have an Account?{" "}
+        </p>
+        <button className="bg-[#196BFE] w-[230px] smd:h-[55px] lg:h-[34px] rounded-full mt-2  ">
           Register
         </button>
       </div>
 
       {/* Right section with account type selection */}
-      <div className="text-white ml-8 pt-28 text-black">
-        <h1 className="text-center text-black">Choose An Account Type</h1>
+      <div className=" ml-8 pt-28 flex flex-col justify-center align-middle ">
+        <h1 className="text-[32px] mt-4 text-center	 font-medium  text-[#3F4254]">
+          Choose An Account Type
+        </h1>
         <div className="flex justify-center mt-8">
           <div className="flex items-center mr-6">
             <input
@@ -47,7 +51,7 @@ const Type = () => {
             />
             <label
               htmlFor="proprietorship"
-              className="text-sm cursor-pointer text-black"
+              className="text-sm cursor-pointer text-[20px]  text-center	 font-medium  text-[#3F4254]"
             >
               Proprietorship
             </label>
@@ -64,7 +68,7 @@ const Type = () => {
             />
             <label
               htmlFor="personal"
-              className="text-sm cursor-pointer text-black"
+              className="text-sm cursor-pointer text-[20px]  text-center	 font-medium  text-[#3F4254]"
             >
               Personal
             </label>
