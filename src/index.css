@@ -1,16 +1,21 @@
 @font-face {
   font-family: "SFRegular";
-  src: url("src/fonts/SFPRODISPLAYREGULAR.OTF") format("OTF");
+  src: url("src/fonts/SF-Pro-Display-Regular.ttf") format("ttf");
 }
 
 @font-face {
   font-family: "SFMedium";
-  src: url("src/fonts/SFPRODISPLAYMEDIUM.OTF") format("OTF");
+  src: url("src/fonts/SF-Pro-Display-Medium.ttf") format("ttf");
 }
 
 @font-face {
   font-family: "SFBold";
-  src: url("src/fonts/SFPRODISPLAYBOLD.OTF") format("OTF");
+  src: url("src/fonts/SF-Pro-Display-Bold.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "SFSemiBold";
+  src: url("src/fonts/SF-Pro-Display-Semibold.ttf") format("ttf");
 }
 
 @tailwind base;

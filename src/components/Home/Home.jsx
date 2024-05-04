@@ -4,6 +4,9 @@ import Hero from "./Hero/Hero";
 import Affiliate from "./Affiliate/Affiliate";
 import heroImg from "../../assets/home/hero/hero-img.svg";
 import Find from "./Find/Find";
+import { Faq } from "./Faq/Faq";
+import Secure from "./Secure/Secure";
+import Footer from "./Footer/Footer";
 
 const Home = () => {
   return (
@@ -17,6 +20,9 @@ const Home = () => {
       </div>
       <Affiliate />
       <Find />
+      <Faq />
+      <Secure />
+      <Footer />
     </div>
   );
 };

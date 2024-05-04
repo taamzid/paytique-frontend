@@ -8,9 +8,10 @@ export default {
     },
     extend: {
       fontFamily: {
-        SFRegular: ["SFRegular"],
-        SFMedium: ["SFMedium"],
-        SFBold: ["SFBold"],
+        sfregular: ["SFRegular"],
+        sfmedium: ["SFMedium"],
+        sfbold: ["SFBold"],
+        sfsemibold: ["SFSemiBold"],
       },
       colors: {
         background: "rgba(25, 107, 254, 0.06)",

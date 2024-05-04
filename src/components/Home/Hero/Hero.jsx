@@ -4,19 +4,19 @@ const Hero = () => {
   return (
     <div>
       <div className="smd:mt-[40px] lg:mt-[80px] flex items-center justify-between text-[#ffffff] bg-gradient-to-r from-[#196BFE] from-0% to-[#0F4098] to-100% w-[533px] smd:h-[50px] lg:h-[66px] rounded-full py-[20px] pl-[20px] smd:pr-[10px] lg:pr-[15px]">
-        <h1 className="text-[18px] font-bold">
+        <h1 className="text-[18px] font-SFBold">
           50$ bonus for first time users.
         </h1>
-        <div className="bg-[#ffffff] rounded-full lg:text-[16px] flex items-center justify-center text-center font-bold text-[#10439F] w-[182px] smd:h-[35px] lg:h-[40px] cursor-pointer">
+        <div className="bg-[#ffffff] rounded-full lg:text-[16px] flex items-center justify-center text-center font-SFBold text-[#10439F] w-[182px] smd:h-[35px] lg:h-[40px] cursor-pointer">
           <h1>Grab the Deal Now!</h1>
         </div>
       </div>
-      <div className="text-[#ffffff] font-medium smd:text-[50px] smd:leading-[50px] lg:text-[80px] lg:leading-[80px] mt-[32px]">
+      <div className="text-[#ffffff] font-SFMedium smd:text-[50px] smd:leading-[50px] lg:text-[80px] lg:leading-[80px] mt-[32px]">
         <h1>Get Paid. Anytime,</h1>
         <h1>Anywhere.</h1>
       </div>
       <div className="text-[18px] text-[#ffffff] smd:mt-[30px] lg:mt-[35px]">
-        <h1 className="smd:hidden lg:block">
+        <h1 className="smd:hidden lg:block font-SFRegular">
           Tired of waiting 1-10 Business days for your international deposit?
           Send & <br />
           receive money instantly and globally with one click.{" "}
@@ -62,7 +62,7 @@ const Hero = () => {
           <button className="border border-[#D9D9D9] rounded-md text-[#ffffff] font-SFRegular text-center smd:w-[200px] h-[40px]">
             Open an Account
           </button>
-          <button className="bg-[#196BFE] rounded-md text-[#ffffff] text-center smd:w-[145px] h-[40px]">
+          <button className="bg-[#196BFE] rounded-md text-[#ffffff] font-SFRegular text-center smd:w-[145px] h-[40px]">
             Get Started
           </button>
         </div>

@@ -1,48 +1,53 @@
-import React from "react";
+import logo from "../../../assets/home/footer/footer.svg";
 
 const Footer = () => {
   return (
     <footer className="bg-black text-white">
-      <div className="container mx-auto py-8 lg:flex lg:items-center lg:justify-between lg: gap-96">
-        {/* Left Column with Logo and Address */}
-        <div className="lg:w-1/4 flex flex-col items-center justify-center mb-8 lg:mb-0">
-          <img src="/path/to/logo.png" alt="Logo" className="w-16 h-16 mb-4" />
-          <p>123 Main Street</p>
-          <p>City, Country</p>
+      <div className="container mx-auto py-20 flex items-center justify-between">
+        <div className="">
+          <div className="flex items-center gap-[20px]">
+            <img src={logo} alt="Logo" />
+            <h1 className="smd:text-[45px] lg:text-[53px] font-SFSemibold text-[#196BFE]">
+              Paytique Financial
+            </h1>
+          </div>
+          <h1 className="smd:text-[14px] lg:text-[16px] smd:mt-[16px] lg:mt-[20px] ml-[105px]">
+            H-46, Rd-65 P.O. ERD West California, United States. <br />
+            Call: 90843454393 &nbsp; &nbsp; Email: tyere@gmail.com
+          </h1>
         </div>
-
-        {/* Right Column with 4 Columns */}
-        <div className="lg:w-3/4 grid grid-cols-2 lg:grid-cols-4 gap-8">
-          {/* Column 1 */}
+        <div className="flex smd:gap-[40px] lg:gap-[60px]">
           <div>
-            <p className="font-bold">Legal</p>
-            <p>User Agreement</p>
-            <p>Privacy Policy</p>
-            <p>Licenses</p>
+            <h1 className="text-[#ffffff]">Legal</h1>
+            <div className="smd:text-[14px] lg:text-[16px] mt-[20px] text-[#a3a1a1]">
+              <h1>User Agreement</h1>
+              <h1 className="mt-[5px]">Privacy Policy</h1>
+              <h1 className="mt-[5px]">Licenses</h1>
+            </div>
           </div>
-
-          {/* Column 2 */}
           <div>
-            <p className="font-bold">Company</p>
-            <p>User Agreement</p>
-            <p>Privacy Policy</p>
-            <p>Licenses</p>
+            <h1 className="text-[#ffffff]">Company</h1>
+            <div className="smd:text-[14px] lg:text-[16px] mt-[20px] text-[#a3a1a1]">
+              <h1>About</h1>
+              <h1 className="mt-[5px]">News</h1>
+              <h1 className="mt-[5px]">Investors</h1>
+            </div>
           </div>
-
-          {/* Column 3 */}
           <div>
-            <p className="font-bold">Product</p>
-            <p>User Agreement</p>
-            <p>Privacy Policy</p>
-            <p>Licenses</p>
+            <h1 className="text-[#ffffff]">Product</h1>
+            <div className="smd:text-[14px] lg:text-[16px] mt-[20px] text-[#a3a1a1]">
+              <h1>Rate & Fees</h1>
+              <h1 className="mt-[5px]">Security</h1>
+              <h1 className="mt-[5px]">Reviews</h1>
+            </div>
           </div>
-
-          {/* Column 4 */}
           <div>
-            <p className="font-bold">Support</p>
-            <p>User Agreement</p>
-            <p>Privacy Policy</p>
-            <p>Licenses</p>
+            <h1 className="text-[#ffffff]">Support</h1>
+            <div className="smd:text-[14px] lg:text-[16px] mt-[20px] text-[#a3a1a1]">
+              <h1>Help</h1>
+              <h1 className="mt-[5px]">Contact Us</h1>
+              <h1 className="mt-[5px]">Connect</h1>
+            </div>
           </div>
         </div>
       </div>
