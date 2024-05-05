@@ -1,30 +1,26 @@
 import card from "../../../assets/login/card.svg";
 import icloud from "../../../assets/login/cloud.svg";
 import google from "../../../assets/login/google.svg";
-import leftBackground from "../../../assets/login/left.svg"; // Import the background image
 import logo from "../../../assets/login/logo.svg";
 import outlook from "../../../assets/login/outlook.svg";
 
 const SignUp = () => {
   return (
-    <div className="grid grid-cols-2 ">
+    <div className="grid grid-cols-2">
       {/* Left section with image, text, and button */}
-      <div
-        className="bg-cover sm:pl-28 lg:pl-16 pt-40  text-white  pb-64"
-        style={{ backgroundImage: `url(${leftBackground})` }}
-      >
-        <img src={logo} alt="Placeholder" className=" pb-32" />
-        <img src={card} alt="Placeholder" className="" />
-        <h1 className=" text-[64.84px] mt-4	 font-medium ">
+      <div className="bg-[url('./assets/login/left.svg')] bg-cover bg-center smd:pl-[50px] lg:pl-[60px] smd:pt-[55px] lg:pt-[65px] text-white h-[100vh]">
+        <img src={logo} alt="logo" className="smd:mb-[80px] lg:mb-[135px]" />
+        <img src={card} alt="card" />
+        <h1 className="smd:text-[50px] lg:text-[62.84px] mt-[35px] font-SFSemibold smd:leading-[60px] lg:leading-[75px]">
           Find The Best Way <br /> To Send Your Money
         </h1>
-        <p className="lg:text-[21.84px] font-SFMedium mt-5 ">
+        <p className="lg:text-[21px] mt-[20px] ">
           If you are seeing this than this might be good.
         </p>
-        <p className="lg:text-[21.84px] font-SFMedium mt-24">
+        <p className="lg:text-[24px] font-SFMedium smd:mt-[70px] lg:mt-[90px]">
           Don’t Have an Account?{" "}
         </p>
-        <button className="bg-[#196BFE] w-[230px] smd:h-[55px] lg:h-[34px] rounded-full mt-2  ">
+        <button className="bg-[#196BFE] smd:w-[170px] lg:w-[253px] h-[31px] rounded-full smd:mt-[10px] lg:mt-[20px] text-[14px] font-bold">
           Register
         </button>
       </div>
@@ -57,9 +53,9 @@ const SignUp = () => {
             <input type="checkbox" id="terms" className="mr-2 mx-6 " />
             <label
               htmlFor="terms"
-              className="text-center lg:text-[14px] font-SFMedium text-[#3F4254]"
+              className="text-center lg:text-[14px] font-SFMedium text-[#3F4254] underline"
             >
-              I accept the Paytique Financial Agreement hleopopdsxzd
+              I accept the Paytique Financial Agreement
             </label>
           </div>
           <div className="mt-4 space-x-4 flex justify-between mx-6">
@@ -71,7 +67,7 @@ const SignUp = () => {
             </button>
           </div>
         </form>
-        <div className="mt-4 text-center align-middle justify-center mt-5">
+        <div className="mt-4 text-center align-middle justify-center">
           <p className="lg:text-[16px] font-SFMedium text-[#3F4254]">
             Sign In With Outlook
           </p>

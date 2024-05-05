@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -59,9 +60,11 @@ const Hero = () => {
           <h1>To</h1>
         </div>
         <div className="mt-[30px] flex justify-between">
-          <button className="border border-[#D9D9D9] rounded-md text-[#ffffff] font-SFRegular text-center smd:w-[200px] h-[40px]">
-            Open an Account
-          </button>
+          <Link to="signup">
+            <button className="border border-[#D9D9D9] rounded-md text-[#ffffff] font-SFRegular text-center smd:w-[200px] h-[40px]">
+              Open an Account
+            </button>
+          </Link>
           <button className="bg-[#196BFE] rounded-md text-[#ffffff] font-SFRegular text-center smd:w-[145px] h-[40px]">
             Get Started
           </button>
