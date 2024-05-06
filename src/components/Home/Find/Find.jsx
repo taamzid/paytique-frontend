@@ -134,7 +134,7 @@ const Find = () => {
         </div>
         <div className="smd:flex items-center justify-center smd:gap-[20px] lg:gap-[30px] mt-[36px] mb-[50px] smd:my-[60px] mx-[35px] smd:mx-[30px] lg:mx-[0px]">
           <div className="flex smd:block items-center justify-center">
-            <div className="border border-[#dbd8d8] rounded-3xl smd:px-5 lg:px-8 py-6 shadow-xl w-[325px] smd:w-[350px] lg:w-[388px] h-[300px] smd:h-[310px] lg:h-[359px]">
+            <div className="border border-[#dbd8d8] rounded-3xl smd:px-5 lg:px-8 py-6 shadow-xl w-[325px] smd:w-[280px] lg:w-[388px] h-[300px] smd:h-[300px] lg:h-[359px]">
               <h1 className="text-[#196BFE] text-[48px] smd:text-[60px] lg:text-[74px] px-[24px] smd:px-[0px]">
                 1.
               </h1>
@@ -145,7 +145,7 @@ const Find = () => {
             </div>
           </div>
           <div className="flex smd:block items-center justify-center">
-            <div className="border border-[#dbd8d8] mt-[25px] smd:mt-[0px] rounded-3xl smd:px-5 lg:px-8 py-6 shadow-xl w-[325px] smd:w-[350px] lg:w-[388px] h-[300px] smd:h-[310px] lg:h-[359px]">
+            <div className="border border-[#dbd8d8] mt-[25px] smd:mt-[0px] rounded-3xl smd:px-5 lg:px-8 py-6 shadow-xl w-[325px] smd:w-[280px] lg:w-[388px] h-[300px] smd:h-[300px] lg:h-[359px]">
               <h1 className="text-[#196BFE] text-[48px] smd:text-[60px] lg:text-[74px] px-[24px] smd:px-[0px]">
                 2.
               </h1>
@@ -156,7 +156,7 @@ const Find = () => {
             </div>
           </div>
           <div className="flex smd:block items-center justify-center">
-            <div className="border border-[#dbd8d8] mt-[25px] smd:mt-[0px] rounded-3xl smd:px-5 lg:px-8 py-6 shadow-xl w-[325px] smd:w-[350px] lg:w-[388px] h-[300px] smd:h-[310px] lg:h-[359px]">
+            <div className="border border-[#dbd8d8] mt-[25px] smd:mt-[0px] rounded-3xl smd:px-5 lg:px-8 py-6 shadow-xl w-[325px] smd:w-[280px] lg:w-[388px] h-[300px] smd:h-[300px] lg:h-[359px]">
               <h1 className="text-[#196BFE] text-[48px] smd:text-[60px] lg:text-[74px] px-[24px] smd:px-[0px]">
                 3.
               </h1>
@@ -167,7 +167,7 @@ const Find = () => {
             </div>
           </div>
           <div className="flex smd:block items-center justify-center">
-            <div className="border border-[#dbd8d8] mt-[25px] smd:mt-[0px] rounded-3xl smd:px-5 lg:px-8 py-6 shadow-xl w-[325px] smd:w-[350px] lg:w-[388px] h-[300px] smd:h-[310px] lg:h-[359px]">
+            <div className="border border-[#dbd8d8] mt-[25px] smd:mt-[0px] rounded-3xl smd:px-5 lg:px-8 py-6 shadow-xl w-[325px] smd:w-[280px] lg:w-[388px] h-[300px] smd:h-[300px] lg:h-[359px]">
               <h1 className="text-[#196BFE] text-[48px] smd:text-[60px] lg:text-[74px] px-[24px] smd:px-[0px]">
                 4.
               </h1>
