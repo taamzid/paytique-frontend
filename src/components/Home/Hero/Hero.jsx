@@ -65,9 +65,11 @@ const Hero = () => {
               Open an Account
             </button>
           </Link>
-          <button className="bg-[#196BFE] rounded-md text-[#ffffff] font-SFRegular text-center smd:w-[145px] h-[40px]">
-            Get Started
-          </button>
+          <Link to="login">
+            <button className="bg-[#196BFE] rounded-md text-[#ffffff] font-SFRegular text-center smd:w-[145px] h-[40px]">
+              Get Started
+            </button>
+          </Link>
         </div>
       </div>
     </div>
