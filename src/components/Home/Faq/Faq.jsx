@@ -50,15 +50,15 @@ export const Faq = () => {
   };
 
   return (
-    <div className="bg-[rgb(40,66,130)] pt-[56px] pb-[87px] relative">
+    <div className="bg-[rgb(40,66,130)] px-[16px] smd:px-[0px] pt-[33px] pb-[57px] smd:pt-[56px] smd:pb-[87px] relative">
       <div className="">
-        <h1 className="text-center text-[#ffffff] smd:text-[60px] lg:text-[80px] font-SFMedium pb-[32px]">
+        <h1 className="text-center text-[#ffffff] text-[65px] smd:text-[60px] lg:text-[80px] font-SFMedium pb-[17px] smd:pb-[32px]">
           FAQ
         </h1>
       </div>
       {faqData.map((faq, index) => (
-        <div className="flex items-center justify-center mt-[32px]" key={index}>
-          <div className="bg-[#ffffff] smd:w-[1070px] lg:w-[1660px] px-[44px] py-[30px] rounded-xl z-[100]">
+        <div className="flex items-center justify-center mt-[13px] smd:mt-[32px]" key={index}>
+          <div className="bg-[#ffffff] w-full smd:w-[1070px] lg:w-[1660px] pl-[20px] pr-[8px] py-[25px] smd:px-[44px] smd:py-[30px] rounded-xl z-[100]">
             <div className="flex justify-between">
               <h1 className="font-SFMedium text-[20px]">
                 {index + 1}. &nbsp; {faq.question}
@@ -79,8 +79,8 @@ export const Faq = () => {
           </div>
         </div>
       ))}
-      <img src={line} alt="line" className="absolute smd:top-[120px] lg:top-[170px] z-[0]" />
-      <img src={line} alt="line" className="absolute right-[0px] bottom-[80px] z-[0]" />
+      <img src={line} alt="line" className="hidden smd:block absolute smd:top-[120px] lg:top-[170px] z-[0]" />
+      <img src={line} alt="line" className="hidden smd:block absolute right-[0px] bottom-[80px] z-[0]" />
     </div>
   );
 };

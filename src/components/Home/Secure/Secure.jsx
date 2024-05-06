@@ -3,7 +3,7 @@ import support from "../../../assets/home/secure/support.svg";
 
 const Secure = () => {
   return (
-    <section className="bg-background pt-[80px]">
+    <section className="bg-background pt-[80px] hidden smd:block">
       <h1 className="text-center smd:text-[45px] lg:text-[60px] font-SFMedium smd:leading-[60px] lg:leading-[75px]">
         Reliable transfers for every purpose, <br />
         your business or family
