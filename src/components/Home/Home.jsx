@@ -10,13 +10,12 @@ import Footer from "./Footer/Footer";
 
 const Home = () => {
   return (
-    <div>
-      <div className="grid grid-cols-2">
-        <div className="bg-[url('./assets/home/hero/bg-hero.svg')] smd:pl-[28px] lg:pl-[100px] smd:pt-[20px] lg:pt-[40px] bg-cover">
+    <div className="overflow-hidden">
+      <div>
+        <div className="bg-[url('./assets/home/hero/bgHero.svg')] lg:pl-[120px] lg:pt-[45px] lg:pb-[130px] bg-cover">
           <NavBar />
           <Hero />
         </div>
-        <img src={heroImg} className="h-full w-full" />
       </div>
       <Affiliate />
       <Find />
