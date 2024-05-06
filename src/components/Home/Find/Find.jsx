@@ -10,7 +10,7 @@ const Find = () => {
   return (
     <div>
       <div className="bg-[#F1F6FF] flex items-center justify-center smd:gap-[60px] lg:gap-[140px] pt-[80px] smd:pb-[320px] lg:pb-[480px] smd:px-[40px] lg:px-[0px]">
-        <div className="flex items-center justify-center smd:gap-[25px] lg:gap-[45px]">
+        <div className="flex items-center justify-center smd:gap-[25px] lg:gap-[46px]">
           <div>
             <div className="bg-[#ffffff] border border-[#2F2F2F] rounded-[15px] smd:w-[295px] lg:w-[305px] h-[182px] p-[30px] shadow-xl">
               <div>
@@ -24,7 +24,7 @@ const Find = () => {
                 </h1>
               </div>
             </div>
-            <div className="bg-[#ffffff] border border-[#2F2F2F] rounded-[15px] smd:w-[295px] lg:w-[305px] h-[182px] p-[30px] mt-[30px] shadow-xl">
+            <div className="bg-[#ffffff] border border-[#2F2F2F] rounded-[15px] smd:w-[295px] lg:w-[305px] h-[182px] p-[30px] mt-[32px] shadow-xl">
               <div>
                 <div className="flex items-center ml-[-12px]">
                   <img src={two} alt="two" />
