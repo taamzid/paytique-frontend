@@ -21,7 +21,7 @@ const NavBar = () => {
         </div>
       </div>
       <div className="hidden smd:flex items-center text-[#ffffff]">
-        <div className="flex items-center smd:gap-[30px] smd:pl-[200px] lg:pl-[300px] lg:gap-[64px] smd:text-[14px] lg:text-[16px] font-SFSemiBold">
+        <div className="flex items-center smd:gap-[30px] smd:pl-[180px] lg:pl-[300px] lg:gap-[64px] smd:text-[14px] lg:text-[16px] font-SFSemiBold">
           <h1 className="cursor-pointer hover:underline underline-offset-[20px] decoration-[3px] decoration-[#196BFE]">
             Home
           </h1>
@@ -36,7 +36,7 @@ const NavBar = () => {
           </h1>
         </div>
       </div>
-      <div className="hidden smd:flex items-center text-[#ffffff] smd:pl-[220px] lg:pl-[352px] smd:gap-[30px] lg:gap-[42px] smd:text-[14px] lg:text-[16px] font-SFSemiBold">
+      <div className="hidden smd:flex items-center text-[#ffffff] smd:pl-[200px] lg:pl-[352px] smd:gap-[30px] lg:gap-[42px] smd:text-[14px] lg:text-[16px] font-SFSemiBold">
         <Link to="login">
           <h1 className="cursor-pointer">Log In</h1>
         </Link>
