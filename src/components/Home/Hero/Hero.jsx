@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
-    <div className="flex justify-center gap-[420px]">
+    <div className="flex justify-center lg:gap-[420px]">
       <div className="pl-[50px]">
-        <div className="smd:mt-[40px] lg:mt-[107px] flex items-center justify-between text-[#ffffff] bg-gradient-to-r from-[#196BFE] from-0% to-[#0F4098] to-100% w-[533px] smd:h-[50px] lg:h-[66px] rounded-full py-[20px] pl-[20px] smd:pr-[10px] lg:pr-[15px]">
+        <div className="smd:mt-[40px] lg:mt-[107px] flex items-center justify-between text-[#ffffff] bg-gradient-to-r from-[#196BFE] from-0% to-[#0F4098] to-100% w-[533px] smd:h-[50px] lg:h-[66px] rounded-full py-[20px] pl-[32px] smd:pr-[10px] lg:pr-[19px]">
           <h1 className="text-[18px] font-SFBold">
             50$ bonus for first time users.
           </h1>
