@@ -31,11 +31,11 @@ const Type = () => {
       </div>
 
       {/* Right section with account type selection */}
-      <div className="ml-8 pt-28 flex flex-col justify-center align-middle ">
-        <h1 className="text-[32px] mt-4 text-center	 font-medium  text-[#3F4254]">
+      <div className="flex flex-col items-center justify-center">
+        <h1 className="text-[32px] mt-4 text-center	font-SFSemibold text-[#3F4254]">
           Choose An Account Type
         </h1>
-        <div className="flex justify-center mt-8">
+        <div className="flex gap-[40px] mt-[8px] ">
           <div className="flex items-center mr-6">
             <input
               type="radio"
@@ -48,7 +48,7 @@ const Type = () => {
             />
             <label
               htmlFor="proprietorship"
-              className="text-sm cursor-pointer text-[20px]  text-center	 font-medium  text-[#3F4254]"
+              className="cursor-pointer text-[20px] text-center font-SFSemibold  text-[#3F4254]"
             >
               Proprietorship
             </label>
@@ -65,13 +65,13 @@ const Type = () => {
             />
             <label
               htmlFor="personal"
-              className="text-sm cursor-pointer text-[20px]  text-center	 font-medium  text-[#3F4254]"
+              className="cursor-pointer text-[20px] text-center font-SFSemibold  text-[#3F4254]"
             >
               Personal
             </label>
           </div>
         </div>
-        <div className="mt-6 text-center">
+        <div className="mt-[30px] text-center">
           <button className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
             Proceed
           </button>
