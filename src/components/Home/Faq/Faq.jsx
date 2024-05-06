@@ -50,18 +50,18 @@ export const Faq = () => {
   };
 
   return (
-    <div className="bg-[rgb(40,66,130)] pt-[40px] pb-[80px] relative">
+    <div className="bg-[rgb(40,66,130)] pt-[56px] pb-[87px] relative">
       <div className="">
-        <h1 className="text-center text-[#ffffff] smd:text-[60px] lg:text-[80px] font-SFMedium">
+        <h1 className="text-center text-[#ffffff] smd:text-[60px] lg:text-[80px] font-SFMedium pb-[32px]">
           FAQ
         </h1>
       </div>
       {faqData.map((faq, index) => (
-        <div className="flex items-center justify-center mt-[30px]" key={index}>
-          <div className="bg-[#ffffff] smd:w-[1070px] lg:w-[1660px] px-8 py-4 rounded-xl z-[100]">
+        <div className="flex items-center justify-center mt-[32px]" key={index}>
+          <div className="bg-[#ffffff] smd:w-[1070px] lg:w-[1660px] px-[44px] py-[30px] rounded-xl z-[100]">
             <div className="flex justify-between">
               <h1 className="font-SFMedium text-[20px]">
-                {index + 1}. {faq.question}
+                {index + 1}. &nbsp; {faq.question}
               </h1>
               <img
                 src={openIndex === index ? up : down}
@@ -71,7 +71,7 @@ export const Faq = () => {
               />
             </div>
             {openIndex === index && (
-              <div className="text-[#828282] text-[16px] ml-[18px] mt-[15px]">
+              <div className="text-[#828282] text-[16px] ml-[28px] mt-[15px]">
                 {faq.answer} <br />
                 {faq.answer2}
               </div>

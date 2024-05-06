@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
-    <div className="flex justify-center lg:gap-[420px]">
+    <div className="flex lg:justify-center smd:gap-[160px] lg:gap-[420px]">
       <div className="pl-[50px]">
-        <div className="smd:mt-[40px] lg:mt-[107px] flex items-center justify-between text-[#ffffff] bg-gradient-to-r from-[#196BFE] from-0% to-[#0F4098] to-100% w-[533px] smd:h-[50px] lg:h-[66px] rounded-full py-[20px] pl-[32px] smd:pr-[10px] lg:pr-[19px]">
+        <div className="smd:mt-[90px] lg:mt-[107px] flex items-center justify-between text-[#ffffff] bg-gradient-to-r from-[#196BFE] from-0% to-[#0F4098] to-100% smd:w-[520px] lg:w-[533px] smd:h-[50px] lg:h-[66px] rounded-full py-[20px] pl-[32px] smd:pr-[10px] lg:pr-[19px]">
           <h1 className="text-[18px] font-SFBold">
             50$ bonus for first time users.
           </h1>
@@ -17,8 +17,8 @@ const Hero = () => {
           <h1>Get Paid. Anytime,</h1>
           <h1>Anywhere.</h1>
         </div>
-        <div className="text-[18px] text-[#ffffff] smd:mt-[30px] lg:mt-[40px]">
-          <h1 className="smd:hidden lg:block font-SFRegular">
+        <div className="lg:text-[18px] text-[#ffffff] smd:mt-[30px] lg:mt-[40px]">
+          <h1 className="font-SFRegular">
             Tired of waiting 1-10 Business days for your international deposit?
             Send & <br />
             receive money instantly and globally with one click.{" "}
@@ -27,18 +27,18 @@ const Hero = () => {
             </span> <br /> Receive funds in minutes with the{" "}
             <span className="font-bold">lowest fees possible.</span>
           </h1>
-          <h1 className="text-[16px] smd:block lg:hidden smd:pr-[30px]">
+          {/* <h1 className="text-[16px] smd:block lg:hidden smd:pr-[30px]">
             Tired of waiting 1-10 Business days for your international deposit?
             Send & receive money instantly and globally with one click.{" "}
             <span className="font-bold">No Transaction Limits!</span> Receive
             funds in minutes with the{" "}
             <span className="font-bold">lowest fees possible.</span>
-          </h1>
+          </h1> */}
         </div>
         {/* <div className="text-[#ffffff] smd:text-[18px] lg:text-[20px] font-SFMedium smd:mt-[25px] lg:mt-[50px]">
           <h1>Send Money. The Fastest Way Possible.</h1>
         </div> */}
-        <div className="mt-[35px] relative max-w-[560px]">
+        <div className="mt-[35px] relative max-w-[620px]">
           <div className="mt-[30px] flex justify-between">
             <Link to="signup">
               <button className="border border-[#D9D9D9] rounded-md text-[#ffffff] font-SFRegular text-center smd:w-[200px] h-[43px]">
@@ -53,8 +53,8 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className="pr-[350px] mt-[60px]">
-        <img src={heroImg} alt="heroImg" className="" />
+      <div className="lg:pr-[350px] mt-[60px]">
+        <img src={heroImg} alt="heroImg" className="smd:w-[250px] lg:w-full" />
       </div>
     </div>
   );

@@ -3,17 +3,17 @@ import rightImage from "../../../assets/home/affiliate/right.svg";
 
 const Affiliate = () => {
   return (
-    <div className="relative my-[90px]">
+    <div className="relative mt-[80px] mb-[100px]">
       <div>
         <img
           src={leftImage}
           alt="leftImage"
-          className="absolute left-0 top-[-90px]"
+          className="absolute left-0 top-[-82px]"
         />
         <img
           src={rightImage}
           alt="rightImage"
-          className="absolute right-0 top-[-90px]"
+          className="absolute right-0 top-[-82px]"
         />
       </div>
       <div>

@@ -9,7 +9,7 @@ import c2 from "../../../assets/home/find/c2.svg";
 const Find = () => {
   return (
     <div>
-      <div className="bg-[#F1F6FF] flex items-center justify-center smd:gap-[60px] lg:gap-[140px] pt-[75px] smd:pb-[320px] lg:pb-[488px] smd:px-[40px] lg:px-[0px]">
+      <div className="bg-[#F1F6FF] flex items-center justify-center smd:gap-[60px] lg:gap-[140px] pt-[80px] smd:pb-[320px] lg:pb-[480px] smd:px-[40px] lg:px-[0px]">
         <div className="flex items-center justify-center smd:gap-[25px] lg:gap-[45px]">
           <div>
             <div className="bg-[#ffffff] border border-[#2F2F2F] rounded-[15px] smd:w-[295px] lg:w-[305px] h-[182px] p-[30px] shadow-xl">
@@ -111,13 +111,13 @@ const Find = () => {
         </div>
       </div>
       <img src={c2} alt="c2" className="absolute right-0" />
-      <div className="smd:mt-[340px] lg:mt-[440px] relative">
+      <div className="smd:mt-[340px] lg:mt-[470px] relative">
         <div>
           <h1 className="smd:text-[60px] lg:text-[80px] text-[#1E1E1E] text-center font-SFMedium">
             How to Get Started
           </h1>
         </div>
-        <div className="flex items-center justify-center smd:gap-[20px] lg:gap-[30px] my-[50px] smd:mx-[30px] lg:mx-[0px]">
+        <div className="flex items-center justify-center smd:gap-[20px] lg:gap-[30px] my-[60px] smd:mx-[30px] lg:mx-[0px]">
           <div className="border border-[#dbd8d8] rounded-3xl smd:px-5 lg:px-8 py-6 shadow-xl smd:w-[350px] lg:w-[388px] smd:h-[310px] lg:h-[359px]">
             <h1 className="text-[#196BFE] smd:text-[60px] lg:text-[74px]">
               1.
@@ -155,7 +155,7 @@ const Find = () => {
             </h1>
           </div>
         </div>
-        <div className="flex items-center justify-center mt-[40px] mb-[100px]">
+        <div className="flex items-center justify-center mt-[40px] mb-[127px]">
           <button className="bg-[#196BFE] w-[366px] smd:h-[55px] lg:h-[64px] rounded-full">
             <h1 className="smd:text-[18px] lg:text-[28px] text-[#ffffff] font-SFMedium">
               Register Now

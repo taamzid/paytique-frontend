@@ -3,13 +3,13 @@ import support from "../../../assets/home/secure/support.svg";
 
 const Secure = () => {
   return (
-    <section className="bg-background pt-[50px]">
+    <section className="bg-background pt-[80px]">
       <h1 className="text-center smd:text-[45px] lg:text-[60px] font-SFMedium smd:leading-[60px] lg:leading-[75px]">
         Reliable transfers for every purpose, <br />
         your business or family
       </h1>
-      <div className="flex justify-center items-center mt-20 ">
-        <div className="flex smd:gap-[40px] lg:gap-10">
+      <div className="flex justify-center items-center mt-[80px]">
+        <div className="flex smd:gap-[40px]">
           <img
             src={secure}
             alt="secure"
