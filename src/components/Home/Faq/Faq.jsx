@@ -58,7 +58,7 @@ export const Faq = () => {
       </div>
       {faqData.map((faq, index) => (
         <div className="flex items-center justify-center mt-[13px] smd:mt-[32px]" key={index}>
-          <div className="bg-[#ffffff] w-full smd:w-[1070px] lg:w-[1660px] pl-[20px] pr-[8px] py-[25px] smd:px-[44px] smd:py-[30px] rounded-xl z-[100]">
+          <div className="bg-[#ffffff] w-full smd:w-[1070px] slg:w-[1500px] lg:w-[1660px] pl-[20px] pr-[8px] py-[25px] smd:px-[44px] smd:py-[30px] rounded-xl z-[100]">
             <div className="flex justify-between">
               <h1 className="font-SFMedium text-[20px]">
                 {index + 1}. &nbsp; {faq.question}
@@ -67,7 +67,7 @@ export const Faq = () => {
                 src={openIndex === index ? up : down}
                 alt={openIndex === index ? "up" : "down"}
                 onClick={() => toggleAnswerVisibility(index)}
-                className="cursor-pointer"
+                className="cursor-pointer w-[10px] smd:w-[23px]"
               />
             </div>
             {openIndex === index && (
@@ -79,7 +79,7 @@ export const Faq = () => {
           </div>
         </div>
       ))}
-      <img src={line} alt="line" className="hidden smd:block absolute smd:top-[120px] lg:top-[170px] z-[0]" />
+      <img src={line} alt="line" className="hidden smd:block absolute smd:top-[120px] slg:top-[170px] z-[0]" />
       <img src={line} alt="line" className="hidden smd:block absolute right-[0px] bottom-[80px] z-[0]" />
     </div>
   );

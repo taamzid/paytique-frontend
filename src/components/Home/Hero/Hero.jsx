@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
-    <div className="flex flex-col-reverse smd:flex-row lg:justify-center smd:gap-[160px] lg:gap-[420px]">
+    <div className="flex flex-col-reverse smd:flex-row lg:justify-center smd:gap-[160px] slg:gap-[350px] lg:gap-[420px]">
       <div className="smd:pl-[50px] pr-[29px] smd:pr-[0px]">
         <div className="mt-[40px] smd:mt-[90px] lg:mt-[107px] flex items-center justify-between text-[#ffffff] bg-gradient-to-r from-[#196BFE] from-0% to-[#0F4098] to-100% smd:w-[520px] lg:w-[533px] smd:h-[50px] lg:h-[66px] rounded-full py-[10px] smd:py-[20px] pl-[18px] smd:pl-[32px] pr-[10px] smd:pr-[10px] lg:pr-[19px]">
           <h1 className="text-[12px] smd:text-[18px] font-SFBold">
@@ -13,11 +13,11 @@ const Hero = () => {
             <h1>Grab the Deal Now!</h1>
           </div>
         </div>
-        <div className="text-[#ffffff] font-SFMedium text-[42px] smd:text-[50px] leading-[45px] smd:leading-[50px] lg:text-[80px] lg:leading-[80px] mt-[50px]">
+        <div className="text-[#ffffff] font-SFMedium text-[42px] smd:text-[50px] leading-[45px] smd:leading-[50px] slg:text-[80px] slg:leading-[80px] mt-[50px]">
           <h1>Get Paid. Anytime,</h1>
           <h1>Anywhere.</h1>
         </div>
-        <div className="lg:text-[18px] text-[#ffffff] smd:mt-[30px] lg:mt-[40px]">
+        <div className="slg:text-[18px] text-[#ffffff] smd:mt-[30px] lg:mt-[40px]">
           <h1 className="font-SFRegular hidden smd:block">
             Tired of waiting 1-10 Business days for your international deposit?
             Send & <br />

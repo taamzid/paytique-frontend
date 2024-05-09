@@ -12,7 +12,7 @@ const Home = () => {
   return (
     <div className="overflow-hidden">
       <div>
-        <div className="bg-[url('./assets/home/hero/bgHero.svg')] pl-[29px] smd:pl-[40px] lg:pl-[120px] pt-[31px] smd:pt-[30px] lg:pt-[45px] pb-[70px] smd:pb-[100px] lg:pb-[130px] bg-cover">
+        <div className="bg-[url('./assets/home/hero/bgHero.svg')] pl-[29px] smd:pl-[40px] slg:pl-[120px] pt-[31px] smd:pt-[30px] lg:pt-[45px] pb-[70px] smd:pb-[100px] lg:pb-[130px] bg-cover">
           <NavBar />
           <Hero />
         </div>

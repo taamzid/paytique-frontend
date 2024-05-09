@@ -1,10 +1,11 @@
+import { Link } from "react-router-dom";
 import secure from "../../../assets/home/secure/secure.svg";
 import support from "../../../assets/home/secure/support.svg";
 
 const Secure = () => {
   return (
     <section className="bg-background pt-[80px] hidden smd:block">
-      <h1 className="text-center smd:text-[45px] lg:text-[60px] font-SFMedium smd:leading-[60px] lg:leading-[75px]">
+      <h1 className="text-center smd:text-[45px] slg:text-[60px] font-SFMedium smd:leading-[60px] slg:leading-[75px]">
         Reliable transfers for every purpose, <br />
         your business or family
       </h1>
@@ -13,21 +14,23 @@ const Secure = () => {
           <img
             src={secure}
             alt="secure"
-            className="smd:w-[700px] smd:h-[420px] lg:h-full lg:w-full"
+            className="smd:w-[700px] smd:h-[420px] slg:h-full slg:w-full"
           />
           <img
             src={support}
             alt="support"
-            className="smd:w-[400px] lg:w-full"
+            className="smd:w-[400px] slg:w-full"
           />
         </div>
       </div>
       <div className="flex items-center justify-center mt-[60px] pb-[80px]">
-        <button className="bg-[#196BFE] w-[366px] smd:h-[55px] lg:h-[64px] rounded-full">
-          <h1 className="smd:text-[18px] lg:text-[20px] text-[#ffffff] font-SFMedium">
-            Get Started Today
-          </h1>
-        </button>
+        <Link to="signup">
+          <button className="bg-[#196BFE] w-[366px] smd:h-[55px] slg:h-[64px] rounded-full">
+            <h1 className="smd:text-[18px] slg:text-[20px] text-[#ffffff] font-SFMedium">
+              Get Started Today
+            </h1>
+          </button>
+        </Link>
       </div>
     </section>
   );
