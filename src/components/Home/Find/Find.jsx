@@ -142,7 +142,7 @@ const Find = () => {
                 <img
                   src={mobile}
                   alt="mobile"
-                  className="slg:w-[520px] lg:w-full h-full mt-[42px] smd:mt-[0px]"
+                  className="slg:w-[520px] lg:w-full smd:h-full mt-[42px] smd:mt-[0px]"
                 />
               </div>
             </div>
