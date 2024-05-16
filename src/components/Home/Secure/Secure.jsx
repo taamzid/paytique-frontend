@@ -1,25 +1,15 @@
 import { Link } from "react-router-dom";
 import secure from "../../../assets/home/secure/secure.svg";
 import support from "../../../assets/home/secure/support.svg";
-import { useRef } from "react";
-import { useIsVisible } from "../Home";
 
 const Secure = () => {
-  const ref1 = useRef();
-  const isVisible1 = useIsVisible(ref1);
-
   return (
     <section className="bg-background pt-[80px] hidden smd:block">
       <h1 className="text-center smd:text-[45px] slg:text-[60px] font-SFMedium smd:leading-[60px] slg:leading-[75px]">
         Reliable transfers for every purpose, <br />
         your business or family
       </h1>
-      <div
-        ref={ref1}
-        className={`transition-opacity ease-in duration-700 ${
-          isVisible1 ? "opacity-100" : "opacity-0"
-        }`}
-      >
+      <div>
         <div className="flex justify-center items-center mt-[80px]">
           <div className="flex smd:gap-[40px]">
             <img

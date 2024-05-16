@@ -1,18 +1,9 @@
-import { useRef } from "react";
 import leftImage from "../../../assets/home/affiliate/left.svg";
 import rightImage from "../../../assets/home/affiliate/right.svg";
-import { useIsVisible } from "../Home";
 
 const Affiliate = () => {
-  const ref1 = useRef();
-  const isVisible1 = useIsVisible(ref1);
   return (
-    <div
-      ref={ref1}
-      className={`transition-opacity ease-in duration-700 ${
-        isVisible1 ? "opacity-100" : "opacity-0"
-      }`}
-    >
+    <div>
       <div className="relative mt-[60px] smd:mt-[80px] mb-[55px] smd:mb-[100px]">
         <div className="hidden smd:block">
           <img

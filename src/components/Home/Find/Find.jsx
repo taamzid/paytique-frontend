@@ -6,27 +6,11 @@ import mobile from "../../../assets/home/find/mobile.svg";
 import c1 from "../../../assets/home/find/c1.svg";
 import c2 from "../../../assets/home/find/c2.svg";
 import { Link } from "react-router-dom";
-import { useIsVisible } from "../Home";
-import { useRef } from "react";
 
 const Find = () => {
-  const ref1 = useRef();
-  const isVisible1 = useIsVisible(ref1);
-
-  const ref2 = useRef();
-  const isVisible2 = useIsVisible(ref2);
-
-  const ref3 = useRef();
-  const isVisible3 = useIsVisible(ref3);
-
   return (
     <div>
-      <div
-        ref={ref1}
-        className={`transition-opacity ease-in duration-700 ${
-          isVisible1 ? "opacity-100" : "opacity-0"
-        }`}
-      >
+      <div>
         <div className="bg-[#F1F6FF] flex flex-col-reverse smd:flex-row items-center justify-center smd:gap-[60px] lg:gap-[140px] pt-[60px] smd:pt-[80px] smd:pb-[320px] lg:pb-[480px] px-[32px] smd:px-[40px] lg:px-[0px]">
           <div className="smd:flex items-center justify-center smd:gap-[25px] lg:gap-[46px]">
             <div>
@@ -98,12 +82,7 @@ const Find = () => {
         </div>
       </div>
       <img src={c1} alt="c1" className="hidden smd:block smd:absolute" />
-      <div
-        ref={ref2}
-        className={`transition-opacity ease-in duration-700 ${
-          isVisible2 ? "opacity-100" : "opacity-0"
-        }`}
-      >
+      <div>
         <div className="mt-[50px] px-[15px] smd:px-[0px] block smd:absolute smd:left-1/2 smd:transform smd:-translate-x-1/2 smd:-translate-y-1/2">
           <div className="flex items-center justify-center">
             <div className="py-[45px] smd:py-[0px] px-[40px] flex flex-col smd:flex-row items-center justify-center smd:gap-[70px] lg:gap-[150px] bg-[#003AA1] smd:pb-[60px] lg:pb-[60px] smd:w-[1150px] slg:w-[1400px] lg:w-[1640px] smd:h-[550px] lg:h-[760px] rounded-3xl">
@@ -154,12 +133,7 @@ const Find = () => {
         alt="c2"
         className="hidden smd:block smd:absolute right-0"
       />
-      <div
-        ref={ref3}
-        className={`transition-opacity ease-in duration-700 ${
-          isVisible3 ? "opacity-100" : "opacity-0"
-        }`}
-      >
+      <div>
         <div className="mt-[60px] smd:mt-[340px] slg:mt-[400px] lg:mt-[470px] relative">
           <div>
             <h1 className="text-[42px] smd:text-[60px] lg:text-[80px] text-[#1E1E1E] text-center font-SFMedium">

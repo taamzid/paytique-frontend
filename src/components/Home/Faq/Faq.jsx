@@ -1,13 +1,9 @@
 import up from "../../../assets/home/faq/up.svg";
 import down from "../../../assets/home/faq/down.svg";
 import line from "../../../assets/home/faq/line.svg";
-import { useRef, useState } from "react";
-import { useIsVisible } from "../Home";
+import { useState } from "react";
 
 export const Faq = () => {
-  const ref1 = useRef();
-  const isVisible1 = useIsVisible(ref1);
-
   const faqData = [
     {
       question: "How can I do this and that with this?",
@@ -54,12 +50,7 @@ export const Faq = () => {
   };
 
   return (
-    <div
-      ref={ref1}
-      className={`transition-opacity ease-in duration-700 ${
-        isVisible1 ? "opacity-100" : "opacity-0"
-      }`}
-    >
+    <div>
       <div className="bg-[rgb(40,66,130)] px-[16px] smd:px-[0px] pt-[33px] pb-[57px] smd:pt-[56px] smd:pb-[87px] relative">
         <div className="">
           <h1 className="text-center text-[#ffffff] text-[65px] smd:text-[60px] lg:text-[80px] font-SFMedium pb-[17px] smd:pb-[32px]">
