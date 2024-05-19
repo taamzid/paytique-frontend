@@ -15,7 +15,7 @@ const Dash = () => {
   const [hoveredFeature, setHoveredFeature] = useState(null);
 
   const sharedStyle0 =
-    "w-[156px] h-[156px] flex items-center justify-center border border-[#CBE5FB] rounded-xl cursor-pointer";
+    "w-[133px] slg:w-[156px] h-[120px] slg:h-[156px] flex items-center justify-center border border-[#CBE5FB] rounded-xl cursor-pointer";
   const hoverStyle0 = "hover:bg-[#CBE5FB] hover:border-none";
   const activeStyle = "bg-[#CBE5FB] border-none";
   const textStyle = "text-[#3F4254] font-semibold mt-[22px]";
@@ -30,7 +30,7 @@ const Dash = () => {
           <h1 className="text-[#ffffff] text-[18px] font-semibold ml-[20px] slg:ml-[45px] pt-[10px] slg:pt-[30px]">
             Balance
           </h1>
-          <div className="flex ml-[20px] slg:ml-[45px] mt-[10px] slg:mt-[25px] gap-[10px] ">
+          <div className="flex mx-[20px] slg:mx-[45px] mt-[10px] slg:mt-[25px] gap-[10px] overflow-auto custom-scrollbar-track custom-scrollbar-thumb">
             <div className="slg:mb-[25px] cursor-pointer">
               <div className="bg-[#ffffff] pt-[8px] slg:pt-[22px] pb-[6px] slg:pb-[18px] px-[8px] slg:px-[15px] rounded-tl-[10px] rounded-tr-[60px] slg:rounded-tr-[100px] w-[110px] slg:w-[170px]">
                 <img
@@ -73,6 +73,81 @@ const Dash = () => {
                 </h1>
                 <h1 className="text-[18px] slg:text-[25px] font-semibold text-[#2356B2]">
                   €8224.50
+                </h1>
+              </div>
+            </div>
+            <div className="mb-[15px] slg:mb-[25px] cursor-pointer">
+              <div className="bg-[#ffffff] pt-[8px] slg:pt-[22px] pb-[6px] slg:pb-[18px] px-[8px] slg:px-[15px] rounded-tl-[10px] rounded-tr-[60px] slg:rounded-tr-[100px] w-[110px] slg:w-[170px]">
+                <img
+                  src={ca}
+                  alt="ca"
+                  className="w-[33px] slg:w-[65px] h-[22px] slg:h-[41px]"
+                />
+                <h1 className="text-[#2356B2] text-[11px] mt-[15px] font-light">
+                  Canadian Dollar
+                </h1>
+                <h1 className="text-[18px] slg:text-[25px] font-semibold text-[#2356B2]">
+                  C$8224.50
+                </h1>
+              </div>
+            </div>
+            <div className="mb-[15px] slg:mb-[25px] cursor-pointer">
+              <div className="bg-[#ffffff] pt-[8px] slg:pt-[22px] pb-[6px] slg:pb-[18px] px-[8px] slg:px-[15px] rounded-tl-[10px] rounded-tr-[60px] slg:rounded-tr-[100px] w-[110px] slg:w-[170px]">
+                <img
+                  src={ca}
+                  alt="ca"
+                  className="w-[33px] slg:w-[65px] h-[22px] slg:h-[41px]"
+                />
+                <h1 className="text-[#2356B2] text-[11px] mt-[15px] font-light">
+                  Canadian Dollar
+                </h1>
+                <h1 className="text-[18px] slg:text-[25px] font-semibold text-[#2356B2]">
+                  C$8224.50
+                </h1>
+              </div>
+            </div>
+            <div className="mb-[15px] slg:mb-[25px] cursor-pointer">
+              <div className="bg-[#ffffff] pt-[8px] slg:pt-[22px] pb-[6px] slg:pb-[18px] px-[8px] slg:px-[15px] rounded-tl-[10px] rounded-tr-[60px] slg:rounded-tr-[100px] w-[110px] slg:w-[170px]">
+                <img
+                  src={ca}
+                  alt="ca"
+                  className="w-[33px] slg:w-[65px] h-[22px] slg:h-[41px]"
+                />
+                <h1 className="text-[#2356B2] text-[11px] mt-[15px] font-light">
+                  Canadian Dollar
+                </h1>
+                <h1 className="text-[18px] slg:text-[25px] font-semibold text-[#2356B2]">
+                  C$8224.50
+                </h1>
+              </div>
+            </div>
+            <div className="mb-[15px] slg:mb-[25px] cursor-pointer">
+              <div className="bg-[#ffffff] pt-[8px] slg:pt-[22px] pb-[6px] slg:pb-[18px] px-[8px] slg:px-[15px] rounded-tl-[10px] rounded-tr-[60px] slg:rounded-tr-[100px] w-[110px] slg:w-[170px]">
+                <img
+                  src={ca}
+                  alt="ca"
+                  className="w-[33px] slg:w-[65px] h-[22px] slg:h-[41px]"
+                />
+                <h1 className="text-[#2356B2] text-[11px] mt-[15px] font-light">
+                  Canadian Dollar
+                </h1>
+                <h1 className="text-[18px] slg:text-[25px] font-semibold text-[#2356B2]">
+                  C$8224.50
+                </h1>
+              </div>
+            </div>
+            <div className="mb-[15px] slg:mb-[25px] cursor-pointer">
+              <div className="bg-[#ffffff] pt-[8px] slg:pt-[22px] pb-[6px] slg:pb-[18px] px-[8px] slg:px-[15px] rounded-tl-[10px] rounded-tr-[60px] slg:rounded-tr-[100px] w-[110px] slg:w-[170px]">
+                <img
+                  src={ca}
+                  alt="ca"
+                  className="w-[33px] slg:w-[65px] h-[22px] slg:h-[41px]"
+                />
+                <h1 className="text-[#2356B2] text-[11px] mt-[15px] font-light">
+                  Canadian Dollar
+                </h1>
+                <h1 className="text-[18px] slg:text-[25px] font-semibold text-[#2356B2]">
+                  C$8224.50
                 </h1>
               </div>
             </div>

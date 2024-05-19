@@ -9,11 +9,11 @@ import Deposit from "./components/Dashboard/Dashboard/Deposit";
 import Request from "./components/Dashboard/Dashboard/Request";
 import Transfer from "./components/Dashboard/Dashboard/Transfer";
 import Withdraw from "./components/Dashboard/Dashboard/Withdraw";
-import { Qr } from "./components/Dashboard/Qr/Qr";
+import Qr from "./components/Dashboard/Qr/Qr";
 import Settings from "./components/Dashboard/Settings/Settings";
 import Support from "./components/Dashboard/Support/Support";
-import { Overview } from "./components/Dashboard/Overview/Overview";
-import { Offer } from "./components/Dashboard/Offer/Offer";
+import Overview from "./components/Dashboard/Overview/Overview";
+import Offer from "./components/Dashboard/Offer/Offer";
 import Balance from "./components/Dashboard/Balance/Balance";
 import Profile from "./components/Dashboard/Profile/Profile";
 
