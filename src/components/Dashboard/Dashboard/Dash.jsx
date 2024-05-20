@@ -30,7 +30,7 @@ const Dash = () => {
           <h1 className="text-[#ffffff] text-[18px] font-semibold ml-[20px] slg:ml-[45px] pt-[10px] slg:pt-[30px]">
             Balance
           </h1>
-          <div className="flex mx-[20px] slg:mx-[45px] mt-[10px] slg:mt-[25px] gap-[10px] overflow-auto custom-scrollbar-track custom-scrollbar-thumb">
+          <div className="flex mx-[20px] slg:mx-[45px] mt-[10px] slg:mt-[25px] gap-[10px] overflow-auto dWidth dTrack dThumb">
             <div className="slg:mb-[25px] cursor-pointer">
               <div className="bg-[#ffffff] pt-[8px] slg:pt-[22px] pb-[6px] slg:pb-[18px] px-[8px] slg:px-[15px] rounded-tl-[10px] rounded-tr-[60px] slg:rounded-tr-[100px] w-[110px] slg:w-[170px]">
                 <img
