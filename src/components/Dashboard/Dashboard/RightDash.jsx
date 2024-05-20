@@ -38,7 +38,7 @@ const RightDash = () => {
           <h1 className="text-[11px] text-[#8F8F8F] font-medium">Show info</h1>
           <img src={eye} alt="eye" />
         </div>
-        <div className="mt-[40px] smd:mt-[64px] flex items-center justify-center gap-[15px] mb-[30px] smd:mb-[50px] cursor-pointer">
+        <div className="mt-[40px] smd:mt-[64px] flex items-center justify-center gap-[15px] mb-[40px] smd:mb-[50px] cursor-pointer">
           <div className="flex items-center  justify-center bg-[#196BFE] font-SFMedium rounded-full w-[120px] smd:w-[167px] h-[40px] smd:h-[53px]">
             <h1 className="text-center text-[#ffffff] text-[14px] smd:text-[16px]">
               Edit cards
