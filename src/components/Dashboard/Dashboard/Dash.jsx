@@ -394,7 +394,7 @@ const Dash = () => {
             </Link>
           </div>
         </div>
-        <div className="px-[20px] slg:px-[40px]">
+        <div className="bg-[#ffffff] px-[20px] slg:px-[40px]">
           <div className="flex items-center justify-between mt-[40px]">
             <h1 className="text-[18px] smd:text-[20px] font-bold text-[#0D0D0D] ">
               Transactions
