@@ -5,7 +5,7 @@ import eye from "../../../assets/dashboard/right/Eye.svg";
 
 const RightDash = () => {
   return (
-    <div className="flex items-start justify-center shadow-xl">
+    <div className="bg-[#ffffff] flex items-start justify-center shadow-xl">
       <div className="smd:px-[32px]">
         <div className="mt-[24px] flex items-center justify-end gap-[8px]">
           <h1 className="text-[12px] font-bold text-[#0790FF]">View Less</h1>
