@@ -41,7 +41,7 @@ export const LeftDash = () => {
     "smd:p-[10px] lg:p-[15px] flex items-center smd:mt-[15px] slg:mt-[24px] gap-[16px] font-SFSemiBold cursor-pointer";
 
   return (
-    <div className="flex smd:pl-[12px] slg:pl-[32px] shadow-md">
+    <div className="hidden smd:flex smd:pl-[12px] slg:pl-[32px] shadow-md">
       <div className="flex flex-col">
         <div className="mt-[32px] smd:mb-[25px] slg:mb-[35px] flex item-center gap-[10px]">
           <img
