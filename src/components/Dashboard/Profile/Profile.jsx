@@ -226,7 +226,7 @@ const Profile = () => {
                     id="default_outlined"
                     className={`${inputStyle} ${
                       isNameEditable ? "border-blue-600" : ""
-                    } focus:border-blue-600 peer`}
+                    } focus:border-blue-600 peer text-[#3F4254]`}
                     placeholder=""
                     value={name}
                     onChange={handleNameChange}
@@ -257,7 +257,7 @@ const Profile = () => {
                     id="default_outlined"
                     className={`${inputStyle} ${
                       isPassEditable ? "border-blue-600" : ""
-                    } focus:border-blue-600 peer`}
+                    } focus:border-blue-600 peer text-[#3F4254]`}
                     placeholder=""
                     value={password}
                     onChange={handlePassChange}
@@ -289,7 +289,7 @@ const Profile = () => {
                   id="default_outlined"
                   className={`${inputStyle} ${
                     isEmailEditable ? "border-blue-600" : ""
-                  } focus:border-blue-600 peer`}
+                  } focus:border-blue-600 peer text-[#3F4254]`}
                   placeholder=""
                   value={email}
                   onChange={handleEmailChange}
@@ -343,14 +343,14 @@ const Profile = () => {
                   </div>
                 </div>
               </div>
-              <div className="smd:flex items-center justify-center gap-[20px] mt-[20px]">
+              <div className="bg-[#ffffff] smd:flex items-center justify-center gap-[20px] mt-[20px]">
                 <div class="relative w-[350px] smd:w-full slg:w-[350px] mt-[25px] smd:mt-[0px">
                   <input
                     type="text"
                     id="default_outlined"
                     className={`${inputStyle} ${
                       isCardEditable ? "border-blue-600" : ""
-                    } focus:border-blue-600 peer`}
+                    } focus:border-blue-600 peer text-[#3F4254]`}
                     placeholder=""
                     value={card}
                     onChange={handleCardChange}
@@ -375,13 +375,13 @@ const Profile = () => {
                     />
                   )}
                 </div>
-                <div class="relative w-[350px] smd:w-full slg:w-[350px] mt-[25px]">
+                <div class="bg-[#ffffff] relative w-[350px] smd:w-full slg:w-[350px] mt-[25px]">
                   <input
                     type="text"
                     id="default_outlined"
                     className={`${inputStyle} ${
                       isSecurityEditable ? "border-blue-600" : ""
-                    } focus:border-blue-600 peer`}
+                    } focus:border-blue-600 peer text-[#3F4254]`}
                     placeholder=""
                     value={security}
                     onChange={handleSecurityChange}
@@ -407,13 +407,13 @@ const Profile = () => {
                   )}
                 </div>
               </div>
-              <div class="relative w-full smd:w-[520px] slg:w-[720px] mt-[20px]">
+              <div class="bg-[#ffffff] relative w-full smd:w-[520px] slg:w-[720px] mt-[20px]">
                 <input
                   type="text"
                   id="default_outlined"
                   className={`${inputStyle} ${
                     isCNumberEditable ? "border-blue-600" : ""
-                  } focus:border-blue-600 peer`}
+                  } focus:border-blue-600 peer text-[#3F4254]`}
                   placeholder=""
                   value={cn}
                   onChange={handleCNChange}
@@ -438,14 +438,14 @@ const Profile = () => {
                   />
                 )}
               </div>
-              <div className="smd:flex items-center justify-center gap-[20px] mt-[20px]">
+              <div className="bg-[#ffffff] smd:flex items-center justify-center gap-[20px] mt-[20px]">
                 <div class="relative w-full slg:w-[350px]">
                   <input
                     type="text"
                     id="default_outlined"
                     className={`${inputStyle} ${
                       isExpEditable ? "border-blue-600" : ""
-                    } focus:border-blue-600 peer`}
+                    } focus:border-blue-600 peer text-[#3F4254]`}
                     placeholder=""
                     value={exp}
                     onChange={handleExpChange}
@@ -470,13 +470,13 @@ const Profile = () => {
                     />
                   )}
                 </div>
-                <div class="relative w-[350px] smd:w-full slg:w-[350px] mt-[25px] smd:mt-[0px]">
+                <div class="bg-[#ffffff] relative w-[350px] smd:w-full slg:w-[350px] mt-[25px] smd:mt-[0px]">
                   <input
                     type="text"
                     id="default_outlined"
                     className={`${inputStyle} ${
                       isCVVEditable ? "border-blue-600" : "border-[#D9D9D9]"
-                    } focus:border-blue-600 peer`}
+                    } focus:border-blue-600 peer text-[#3F4254]`}
                     placeholder=""
                     value={cvv}
                     onChange={handleCVVChange}
@@ -502,13 +502,13 @@ const Profile = () => {
                   )}
                 </div>
               </div>
-              <div class="relative w-full smd:w-[520px] slg:w-[720px] mt-[20px]">
+              <div class="bg-[#ffffff] relative w-full smd:w-[520px] slg:w-[720px] mt-[20px]">
                 <input
                   type="text"
                   id="default_outlined"
                   className={`${inputStyle} ${
                     isPNEditable ? "border-blue-600" : ""
-                  } focus:border-blue-600 peer`}
+                  } focus:border-blue-600 peer text-[#3F4254]`}
                   placeholder=""
                   value={pn}
                   onChange={handlePNChange}
