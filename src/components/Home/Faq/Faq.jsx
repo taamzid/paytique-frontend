@@ -65,7 +65,7 @@ export const Faq = () => {
             >
               <div className="bg-[#ffffff] w-full smd:w-[1070px] slg:w-[1500px] lg:w-[1660px] pl-[20px] pr-[8px] py-[25px] smd:px-[44px] smd:py-[30px] rounded-xl z-[100]">
                 <div className="flex justify-between">
-                  <h1 className="font-SFMedium text-[20px] pr-[5px] smd:pr-[0px]">
+                  <h1 className="font-SFMedium text-[20px] pr-[5px] smd:pr-[0px] text-[#1E1E1E]">
                     {index + 1}. &nbsp; {faq.question}
                   </h1>
                   <img
