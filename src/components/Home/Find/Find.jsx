@@ -18,7 +18,9 @@ const Find = () => {
                 <div>
                   <div className="flex items-center ml-[-12px]">
                     <img src={one} alt="one" />
-                    <h1 className="text-[#000C2A] text-[18px] font-medium">Instant Payment</h1>
+                    <h1 className="text-[#000C2A] text-[18px] font-medium">
+                      Instant Payment
+                    </h1>
                   </div>
                   <h1 className="text-[12px] mt-[15px] text-[#000C2A]">
                     Receive fund instantly without slowing down from bank
@@ -30,7 +32,9 @@ const Find = () => {
                 <div>
                   <div className="flex items-center ml-[-12px]">
                     <img src={two} alt="two" />
-                    <h1 className="text-[#000C2A] text-[18px] font-medium">Safe & Secure</h1>
+                    <h1 className="text-[#000C2A] text-[18px] font-medium">
+                      Safe & Secure
+                    </h1>
                   </div>
                   <h1 className="text-[#000C2A] text-[12px] mt-[15px]">
                     Leveraging the security from advanced <br />
@@ -43,7 +47,9 @@ const Find = () => {
               <div>
                 <div className="flex items-center ml-[-12px]">
                   <img src={three} alt="three" />
-                  <h1 className="text-[18px] font-medium text-[#000C2A]">Payment Habit</h1>
+                  <h1 className="text-[18px] font-medium text-[#000C2A]">
+                    Payment Habit
+                  </h1>
                 </div>
                 <h1 className="text-[12px] mt-[15px] text-[#000C2A]">
                   Respect users’ habit without hassles but <br />
@@ -83,7 +89,7 @@ const Find = () => {
       </div>
       <img src={c1} alt="c1" className="hidden smd:block smd:absolute" />
       <div>
-        <div className="mt-[50px] px-[15px] smd:px-[0px] block smd:absolute smd:left-1/2 smd:transform smd:-translate-x-1/2 smd:-translate-y-1/2">
+        <div className="bg-[#ffffff] pt-[50px] smd:pt-[0px] px-[15px] smd:px-[0px] block smd:absolute smd:left-1/2 smd:transform smd:-translate-x-1/2 smd:-translate-y-1/2">
           <div className="flex items-center justify-center">
             <div className="py-[45px] smd:py-[0px] px-[40px] flex flex-col smd:flex-row items-center justify-center smd:gap-[70px] lg:gap-[150px] bg-[#003AA1] smd:pb-[60px] lg:pb-[60px] smd:w-[1150px] slg:w-[1400px] lg:w-[1640px] smd:h-[550px] lg:h-[760px] rounded-3xl">
               <div>
