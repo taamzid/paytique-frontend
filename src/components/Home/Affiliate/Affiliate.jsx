@@ -4,7 +4,7 @@ import rightImage from "../../../assets/home/affiliate/right.svg";
 const Affiliate = () => {
   return (
     <div>
-      <div className="bg-[#ffffff] relative mt-[60px] smd:mt-[80px] mb-[55px] smd:mb-[100px]">
+      <div className="bg-[#ffffff] relative pt-[60px] smd:pt-[0px] smd:mt-[80px] pb-[55px] smd:pb-[0px] smd:mb-[100px]">
         <div className="hidden smd:block">
           <img
             src={leftImage}
@@ -18,7 +18,7 @@ const Affiliate = () => {
           />
         </div>
         <div className="">
-          <h1 className="text-[48px] smd:text-[60px] slg:text-[80px] text-center font-medium">
+          <h1 className="text-[#1E1E1E] text-[48px] smd:text-[60px] slg:text-[80px] text-center font-medium">
             Affiliated With
           </h1>
           <div className="px-[65px] smd:px-[0px] smd:flex items-center justify-center mt-[35px] smd:mt-[70px] smd:gap-[50px] slg:gap-[120px] lg:gap-[145px]">
@@ -34,7 +34,7 @@ const Affiliate = () => {
                 Receive fund instantly without <br />
                 slowing down from bank bureaucratic.
               </h1>
-              <h1 className="text-center text-[12px] mt-[18px] smd:mt-[15px] smd:hidden">
+              <h1 className="text-center text-[12px] mt-[18px] smd:mt-[15px] text-[#1E1E1E] smd:hidden">
                 Receive fund instantly without slowing down from bank
                 bureaucratic.
               </h1>
@@ -51,7 +51,7 @@ const Affiliate = () => {
                 Receive fund instantly without <br />
                 slowing down from bank bureaucratic.
               </h1>
-              <h1 className="text-center text-[12px] mt-[18px] smd:mt-[15px] smd:hidden">
+              <h1 className="text-center text-[12px] mt-[18px] text-[#1E1E1E] smd:mt-[15px] smd:hidden">
                 Receive fund instantly without slowing down from bank
                 bureaucratic.
               </h1>
@@ -68,7 +68,7 @@ const Affiliate = () => {
                 Receive fund instantly without <br />
                 slowing down from bank bureaucratic.
               </h1>
-              <h1 className="text-center text-[12px] mt-[18px] smd:mt-[15px] smd:hidden">
+              <h1 className="text-center text-[12px] mt-[18px] text-[#1E1E1E] smd:mt-[15px] smd:hidden">
                 Receive fund instantly without slowing down from bank
                 bureaucratic.
               </h1>
@@ -85,7 +85,7 @@ const Affiliate = () => {
                 Receive fund instantly without <br />
                 slowing down from bank bureaucratic.
               </h1>
-              <h1 className="text-center text-[12px] mt-[18px] smd:mt-[15px] smd:hidden">
+              <h1 className="text-center text-[12px] mt-[18px] text-[#1E1E1E] smd:mt-[15px] smd:hidden">
                 Receive fund instantly without slowing down from bank
                 bureaucratic.
               </h1>

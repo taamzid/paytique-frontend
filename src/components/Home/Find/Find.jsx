@@ -18,9 +18,9 @@ const Find = () => {
                 <div>
                   <div className="flex items-center ml-[-12px]">
                     <img src={one} alt="one" />
-                    <h1 className="text-[18px] font-medium">Instant Payment</h1>
+                    <h1 className="text-[#000C2A] text-[18px] font-medium">Instant Payment</h1>
                   </div>
-                  <h1 className="text-[12px] mt-[15px]">
+                  <h1 className="text-[12px] mt-[15px] text-[#000C2A]">
                     Receive fund instantly without slowing down from bank
                     bureaucratic.
                   </h1>
@@ -30,9 +30,9 @@ const Find = () => {
                 <div>
                   <div className="flex items-center ml-[-12px]">
                     <img src={two} alt="two" />
-                    <h1 className="text-[18px] font-medium">Safe & Secure</h1>
+                    <h1 className="text-[#000C2A] text-[18px] font-medium">Safe & Secure</h1>
                   </div>
-                  <h1 className="text-[12px] mt-[15px]">
+                  <h1 className="text-[#000C2A] text-[12px] mt-[15px]">
                     Leveraging the security from advanced <br />
                     blockchain technology.
                   </h1>
@@ -43,9 +43,9 @@ const Find = () => {
               <div>
                 <div className="flex items-center ml-[-12px]">
                   <img src={three} alt="three" />
-                  <h1 className="text-[18px] font-medium">Payment Habit</h1>
+                  <h1 className="text-[18px] font-medium text-[#000C2A]">Payment Habit</h1>
                 </div>
-                <h1 className="text-[12px] mt-[15px]">
+                <h1 className="text-[12px] mt-[15px] text-[#000C2A]">
                   Respect users’ habit without hassles but <br />
                   lowest fees possible.
                 </h1>
@@ -57,7 +57,7 @@ const Find = () => {
               Find out why thousands of people <br /> worldwide are using{" "}
               <span className="text-[#196BFE]">Paytique.</span>
             </h1>
-            <h1 className="smd:block slg:hidden text-center smd:text-start text-[32px] smd:text-[35px] lg:text-[48px] font-SFMedium leading-[45px]">
+            <h1 className="text-[#2F2F2F] smd:block slg:hidden text-center smd:text-start text-[32px] smd:text-[35px] lg:text-[48px] font-SFMedium leading-[45px]">
               Find out why thousands of people worldwide are using{" "}
               <span className="text-[#196BFE]">Paytique.</span>
             </h1>
@@ -66,7 +66,7 @@ const Find = () => {
               fees <br />
               possible.
             </h1>
-            <h1 className="text-[20px] smd:text-[18px] lg:hidden leading-[28px] smd:leading-[30px] mt-[30px] smd:mt-[25px]">
+            <h1 className="text-[#2F2F2F] text-[20px] smd:text-[18px] lg:hidden leading-[28px] smd:leading-[30px] mt-[30px] smd:mt-[25px]">
               No Transaction Limits! Receive funds in minutes with the lowest
               fees possible.
             </h1>
@@ -146,7 +146,7 @@ const Find = () => {
                 <h1 className="text-[#196BFE] text-[48px] smd:text-[60px] lg:text-[74px] px-[24px] smd:px-[0px]">
                   1.
                 </h1>
-                <h1 className="px-[24px] smd:px-[0px] text-[24px] lg:text-[29px] font-SFMedium smd:leading-[35px] lg:leading-[40px]">
+                <h1 className="text-[#1E1E1E] px-[24px] smd:px-[0px] text-[24px] lg:text-[29px] font-SFMedium smd:leading-[35px] lg:leading-[40px]">
                   <span className="text-[#196BFE]">Just a Random</span> Text
                   that is here to show what type of content can be written here.
                 </h1>
@@ -157,7 +157,7 @@ const Find = () => {
                 <h1 className="text-[#196BFE] text-[48px] smd:text-[60px] lg:text-[74px] px-[24px] smd:px-[0px]">
                   2.
                 </h1>
-                <h1 className="px-[24px] smd:px-[0px] text-[24px] lg:text-[29px] font-SFMedium smd:leading-[35px] lg:leading-[40px]">
+                <h1 className="text-[#1E1E1E] px-[24px] smd:px-[0px] text-[24px] lg:text-[29px] font-SFMedium smd:leading-[35px] lg:leading-[40px]">
                   <span className="text-[#196BFE]">Just a Random</span> Text
                   that is here to show what type of content can be written here.
                 </h1>
@@ -168,7 +168,7 @@ const Find = () => {
                 <h1 className="text-[#196BFE] text-[48px] smd:text-[60px] lg:text-[74px] px-[24px] smd:px-[0px]">
                   3.
                 </h1>
-                <h1 className="px-[24px] smd:px-[0px] text-[24px] lg:text-[29px] font-SFMedium smd:leading-[35px] lg:leading-[40px]">
+                <h1 className="text-[#1E1E1E] px-[24px] smd:px-[0px] text-[24px] lg:text-[29px] font-SFMedium smd:leading-[35px] lg:leading-[40px]">
                   <span className="text-[#196BFE]">Just a Random</span> Text
                   that is here to show what type of content can be written here.
                 </h1>
@@ -179,14 +179,14 @@ const Find = () => {
                 <h1 className="text-[#196BFE] text-[48px] smd:text-[60px] lg:text-[74px] px-[24px] smd:px-[0px]">
                   4.
                 </h1>
-                <h1 className="px-[24px] smd:px-[0px] text-[24px] lg:text-[29px] font-SFMedium smd:leading-[35px] lg:leading-[40px]">
+                <h1 className="text-[#1E1E1E] px-[24px] smd:px-[0px] text-[24px] lg:text-[29px] font-SFMedium smd:leading-[35px] lg:leading-[40px]">
                   <span className="text-[#196BFE]">Just a Random</span> Text
                   that is here to show what type of content can be written here.
                 </h1>
               </div>
             </div>
           </div>
-          <div className="flex items-center justify-center mt-[40px] mb-[127px]">
+          <div className="flex items-center justify-center pt-[20px] smd:pt-[0px] smd:mt-[40px] pb-[127px]">
             <Link to="signup">
               <button className="bg-[#196BFE] w-[299px] smd:w-[366px] h-[72px] smd:h-[55px] lg:h-[64px] rounded-full">
                 <h1 className="text-[28px] smd:text-[18px] slg:text-[28px] text-[#ffffff] font-SFMedium">
