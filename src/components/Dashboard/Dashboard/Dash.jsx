@@ -14,10 +14,17 @@ import search from "../../../assets/common/Search.svg";
 import Menu from "../../../assets/common/Menu.svg";
 import mobileLogo from "../../../assets/common/mobileLogo.svg";
 import notif from "../../../assets/dashboard/center/Notif.svg";
+import { DashMenu } from "./DashMenu";
 
 const Dash = () => {
   const [activeFeature, setActiveFeature] = useState(null);
   const [hoveredFeature, setHoveredFeature] = useState(null);
+
+  const [menuClicked, setMenuClicked] = useState(false);
+
+  const handleMenuClicked = () => {
+    setMenuClicked((prev) => !prev);
+  };
 
   const sharedStyle0 =
     "h-[80px] smd:w-[133px] slg:w-[156px] smd:h-[120px] slg:h-[156px] flex items-center justify-center border border-[#CBE5FB] rounded-xl cursor-pointer";
@@ -177,10 +184,23 @@ const Dash = () => {
           </div>
         </div>
         <div className="relative smd:hidden">
+          {menuClicked && (
+            <div
+              className="fixed inset-0 bg-black bg-opacity-50 z-40"
+              onClick={handleMenuClicked}
+            ></div>
+          )}
+          <div
+            className={`fixed inset-x-0 top-0 transform ${
+              menuClicked ? "translate-y-0" : "-translate-y-full"
+            } transition-transform duration-300 ease-in-out bg-white z-50`}
+          >
+            <DashMenu />
+          </div>
           <div className="px-[20px] block pt-[50px] max-h-[288px] smd:hidden bg-[url('./assets/common/bgMobile.svg')] bg-cover rounded-bl-[30px] rounded-br-[30px]">
             <div className="flex items-center justify-between">
               <img src={mobileLogo} alt="mobileLogo" />
-              <img src={Menu} alt="menu" />
+              <img src={Menu} alt="menu" onClick={handleMenuClicked} />
             </div>
             <div>
               <div className="pr-[10px] flex items-center justify-between mt-[20px]">
