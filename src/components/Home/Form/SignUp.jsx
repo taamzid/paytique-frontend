@@ -9,7 +9,7 @@ import { useAuth0 } from "@auth0/auth0-react";
 const SignUp = () => {
   const { loginWithRedirect, isAuthenticated } = useAuth0();
   return (
-    <div className="smd:grid grid-cols-2">
+    <div className="bg-[#ffffff] smd:grid grid-cols-2">
       {/* Left section with image, text, and button */}
       <div className="flex flex-col items-center justify-center smd:block h-[50vh] bg-[url('./assets/login/left.svg')] bg-cover bg-center smd:pl-[50px] lg:pl-[60px] smd:pt-[55px] lg:pt-[65px] text-white smd:h-[100vh]">
         <Link to="/">
