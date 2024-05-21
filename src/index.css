@@ -56,3 +56,14 @@
   background-clip: padding-box;
 }
 
+/* Hide custom scrollbars for mobile devices */
+@media (max-width: 768px) {
+  .bWidth::-webkit-scrollbar {
+    display: none;
+  }
+
+  .bTrack::-webkit-scrollbar-track,
+  .bThumb::-webkit-scrollbar-thumb {
+    display: none;
+  }
+}
