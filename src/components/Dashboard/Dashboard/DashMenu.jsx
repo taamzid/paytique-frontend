@@ -73,7 +73,9 @@ export const DashMenu = () => {
         <NavLink
           to="/profile"
           className={({ isActive }) =>
-            `${sharedStyle} ${getSectionClass(isActive)} ${hoverStyle} mt-[10px]`
+            `${sharedStyle} ${getSectionClass(
+              isActive
+            )} ${hoverStyle} mt-[10px]`
           }
           onMouseEnter={() => setHoveredSection("profile")}
           onMouseLeave={() => setHoveredSection(null)}
@@ -91,7 +93,9 @@ export const DashMenu = () => {
         <NavLink
           to="/balance"
           className={({ isActive }) =>
-            `${sharedStyle} ${getSectionClass(isActive)} ${hoverStyle} mt-[10px]`
+            `${sharedStyle} ${getSectionClass(
+              isActive
+            )} ${hoverStyle} mt-[10px]`
           }
           onMouseEnter={() => setHoveredSection("balance")}
           onMouseLeave={() => setHoveredSection(null)}
@@ -109,7 +113,9 @@ export const DashMenu = () => {
         <NavLink
           to="/offers"
           className={({ isActive }) =>
-            `${sharedStyle} ${getSectionClass(isActive)} ${hoverStyle} mt-[10px]`
+            `${sharedStyle} ${getSectionClass(
+              isActive
+            )} ${hoverStyle} mt-[10px]`
           }
           onMouseEnter={() => setHoveredSection("offer")}
           onMouseLeave={() => setHoveredSection(null)}
@@ -125,7 +131,9 @@ export const DashMenu = () => {
         <NavLink
           to="/overview"
           className={({ isActive }) =>
-            `${sharedStyle} ${getSectionClass(isActive)} ${hoverStyle} mt-[10px]`
+            `${sharedStyle} ${getSectionClass(
+              isActive
+            )} ${hoverStyle} mt-[10px]`
           }
           onMouseEnter={() => setHoveredSection("overview")}
           onMouseLeave={() => setHoveredSection(null)}
@@ -144,7 +152,9 @@ export const DashMenu = () => {
         <NavLink
           to="/support"
           className={({ isActive }) =>
-            `${sharedStyle} ${getSectionClass(isActive)} ${hoverStyle} mt-[10px]`
+            `${sharedStyle} ${getSectionClass(
+              isActive
+            )} ${hoverStyle} mt-[10px]`
           }
           onMouseEnter={() => setHoveredSection("support")}
           onMouseLeave={() => setHoveredSection(null)}
@@ -163,7 +173,9 @@ export const DashMenu = () => {
         <NavLink
           to="/settings"
           className={({ isActive }) =>
-            `${sharedStyle} ${getSectionClass(isActive)} ${hoverStyle} mt-[10px]`
+            `${sharedStyle} ${getSectionClass(
+              isActive
+            )} ${hoverStyle} mt-[10px]`
           }
           onMouseEnter={() => setHoveredSection("settings")}
           onMouseLeave={() => setHoveredSection(null)}
@@ -182,7 +194,9 @@ export const DashMenu = () => {
         <NavLink
           to="/qr-code"
           className={({ isActive }) =>
-            `${sharedStyle} ${getSectionClass(isActive)} ${hoverStyle} mt-[10px]`
+            `${sharedStyle} ${getSectionClass(
+              isActive
+            )} ${hoverStyle} mt-[10px] mb-[32px] `
           }
           onMouseEnter={() => setHoveredSection("qr")}
           onMouseLeave={() => setHoveredSection(null)}
@@ -196,7 +210,7 @@ export const DashMenu = () => {
         </NavLink>
 
         {isAuthenticated && (
-          <div className="ml-[15px] mt-[32px] mb-[25px] flex items-center gap-[10px] cursor-pointer">
+          <div className="ml-[15px] mb-[25px] flex items-center gap-[10px] cursor-pointer">
             <img src={logoutt} alt="logout" />
             <h1
               className="font-bold text-[#E5613E] ml-[6px] cursor-pointer"
