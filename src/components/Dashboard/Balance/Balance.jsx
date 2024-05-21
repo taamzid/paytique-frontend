@@ -243,9 +243,9 @@ const Balance = () => {
   return (
     <div className="bg-[#ffffff] smd:grid smd:grid-cols-[1fr_2.5fr_1.5fr] slg:grid-cols-[.9fr_3fr_1fr] lg:grid-cols-[.8fr_3fr_1.1fr] h-[100vh]">
       <LeftDash />
-      <div className="overflow-y-auto pb-[40px] [&::-webkit-scrollbar]:hidden [-ms-overflow-style]:hidden [scrollbar-width]:hidden">
+      <div className="bg-[#ffffff] overflow-y-auto pb-[40px] [&::-webkit-scrollbar]:hidden [-ms-overflow-style]:hidden [scrollbar-width]:hidden">
         <Common />
-        <div className="px-[20px] slg:px-[40px]">
+        <div className="bg-[#ffffff] px-[20px] slg:px-[40px]">
           {currencies.map((currency, index) => (
             <div
               key={currency.id}
@@ -254,7 +254,7 @@ const Balance = () => {
               }`}
               onClick={() => toggleContent(index)}
             >
-              <div className="flex items-center gap-[15px]">
+              <div className="bg-[#ffffff] flex items-center gap-[15px]">
                 <img src={currency.imgSrc} alt={currency.name} />
                 <div>
                   <h1 className="font-light text-[15px] text-[#2356B2]">
@@ -267,13 +267,13 @@ const Balance = () => {
                 </div>
               </div>
               {activeIndex === index && (
-                <div className="mt-[16px] max-h-[250px] slg:max-h-[300px] overflow-auto bWidth bTrack bThumb">
+                <div className="bg-[#ffffff] mt-[16px] max-h-[250px] slg:max-h-[300px] overflow-auto bWidth bTrack bThumb">
                   {currency.transactions.map((transaction) => (
                     <div
                       key={transaction.id}
-                      className="flex items-center justify-between w-full border-2 h-[60px] px-[10px] smd:px-[16px] rounded-[6px] cursor-pointer mt-[12px]"
+                      className="bg-[#ffffff] flex items-center justify-between w-full border-2 h-[60px] px-[10px] smd:px-[16px] rounded-[6px] cursor-pointer mt-[12px]"
                     >
-                      <div className="flex items-center gap-[6px] smd:gap-[10px]">
+                      <div className="bg-[#ffffff] flex items-center gap-[6px] smd:gap-[10px]">
                         <img
                           src={avatar}
                           alt="avatar"
@@ -288,7 +288,7 @@ const Balance = () => {
                           </h1>
                         </div>
                       </div>
-                      <div className="flex items-center gap-[6px]">
+                      <div className="bg-[#ffffff] flex items-center gap-[6px]">
                         <h1 className="text-[#3F4254] font-medium text-[12px] smd:text-[18px]">
                           {transaction.amount}
                         </h1>
