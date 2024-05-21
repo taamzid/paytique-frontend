@@ -32,13 +32,20 @@ const Deposit = () => {
   ];
 
   return (
-    <div className="grid smd:grid-cols-[1fr_2.5fr_1.5fr] slg:grid-cols-[.9fr_3fr_1fr] lg:grid-cols-[.8fr_3fr_1.1fr] h-[100vh]">
+    <div className="bg-[#ffffff] grid smd:grid-cols-[1fr_2.5fr_1.5fr] slg:grid-cols-[.9fr_3fr_1fr] lg:grid-cols-[.8fr_3fr_1.1fr] h-[100vh]">
       <LeftDash />
       <div>
         <Common />
         <div className="">
-          <div className="flex items-center gap-[8px]">
-            <h1 className="text-[18px] font-semibold ml-[65px]">
+          <div className="hidden mt-[25px] smd:mt-[0px] smd:flex items-center justify-center smd:justify-start gap-[8px]">
+            <h1 className="text-[18px] font-semibold smd:ml-[65px]">
+              Deposit Money to{" "}
+              <span className="text-[#196BFE]">&nbsp; Primary card</span>
+            </h1>
+            <img src={dropdown} alt="dropdown" className="cursor-pointer" />
+          </div>
+          <div className="mt-[25px] smd:mt-[0px] flex items-center justify-center smd:justify-start gap-[8px] smd:hidden">
+            <h1 className="text-[#8F8F8F] text-[13px] font-medium smd:ml-[65px]">
               Deposit Money to{" "}
               <span className="text-[#196BFE]">&nbsp; Primary card</span>
             </h1>
@@ -47,7 +54,7 @@ const Deposit = () => {
           <div className="flex items-center justify-center mt-[32px]">
             <img src={card1} alt="card1" />
           </div>
-          <div className="mt-[30px] flex items-center justify-center  gap-[20px]">
+          <div className="mt-[30px] hidden smd:flex items-center justify-center  gap-[20px]">
             <div className="flex items-center justify-center gap-[8px] border-2 border-[#E1E3EA] rounded-lg w-[220px] slg:w-[240px] h-[50px]">
               <h1 className="text-[#3F4254] text-[14px] slg:text-[16px]">
                 Selected Currency{" "}
@@ -60,6 +67,17 @@ const Deposit = () => {
                 Deposit from{" "}
                 <span className="text-[#196BFE] font-semibold">
                   &nbsp;Credit/Debit Card
+                </span>
+              </h1>
+              <img src={path} alt="path" className="cursor-pointer" />
+            </div>
+          </div>
+          <div className="mt-[30px] flex smd:hidden items-center justify-center">
+            <div className="flex items-center justify-center gap-[8px]">
+              <h1 className="text-[#8F8F8F] text-[14px] slg:text-[16px]">
+                Selected Currency{" "}
+                <span className="text-[#196BFE] font-semibold">
+                  &nbsp;US Dolar
                 </span>
               </h1>
               <img src={path} alt="path" className="cursor-pointer" />
@@ -84,6 +102,15 @@ const Deposit = () => {
                   onClick={incrementAmount}
                 />
               </div>
+            </div>
+            <div className="smd:hidden flex items-center justify-center gap-[8px] mt-[25px]">
+              <h1 className="text-[#8F8F8F] text-[14px]">
+                Deposit from{" "}
+                <span className="text-[#196BFE] font-semibold">
+                  &nbsp;Credit/Debit Card
+                </span>
+              </h1>
+              <img src={path} alt="path" className="cursor-pointer" />
             </div>
             <div className="mt-[30px]">
               <div className="flex items-center gap-[20px]">
@@ -111,7 +138,7 @@ const Deposit = () => {
                 ))}
               </div>
               <div>
-                <button className="mt-[30px] bg-[#196BFE] w-[315px] h-[43px] text-[#ffffff] text-bold rounded-[6px]">
+                <button className="mb-[20px] smd:mb-[0px] mt-[30px] bg-[#196BFE] w-[315px] h-[43px] text-[#ffffff] text-bold rounded-[6px]">
                   Deposit Money
                 </button>
               </div>

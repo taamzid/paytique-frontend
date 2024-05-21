@@ -8,9 +8,6 @@ import bell from "../../../assets/common/Bell.svg";
 import search from "../../../assets/common/Search.svg";
 import Menu from "../../../assets/common/Menu.svg";
 import avatar from "../../../assets/common/avatar.svg";
-import usa from "../../../assets/dashboard/center/usa.svg";
-import ca from "../../../assets/dashboard/center/ca.svg";
-import euro from "../../../assets/dashboard/center/eu.svg";
 
 const Common = () => {
   const { user, isAuthenticated } = useAuth0();
@@ -47,13 +44,13 @@ const Common = () => {
           </div>
         )}
       </div>
-      <div className="px-[20px] block pt-[50px] max-h-[288px] smd:hidden bg-[url('./assets/common/bgMobile.svg')] bg-cover">
+      <div className="px-[20px] block pt-[50px] max-h-[288px] smd:hidden bg-[url('./assets/common/bgMobile.svg')] bg-cover rounded-bl-[30px] rounded-br-[30px]">
         <div className="flex items-center justify-between">
           <img src={mobileLogo} alt="mobileLogo" />
           <img src={Menu} alt="menu" />
         </div>
         <div>
-          <div className="pr-[10px] flex items-center justify-between mt-[20px]">
+          <div className="pr-[10px] flex items-center justify-between mt-[20px] pb-[40px]">
             <div>
               <h1 className="text-medium text-[13px] text-[#ffffff]">
                 Good Morning,
@@ -77,9 +74,6 @@ const Common = () => {
               <img src={avatar} alt="avatar" />
             </div>
           </div>
-          <h1 className="mt-[10px] pb-[80px] text-medium text-[20px] text-[#ffffff]">
-            Balance
-          </h1>
         </div>
       </div>
     </div>

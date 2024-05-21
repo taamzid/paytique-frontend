@@ -32,13 +32,13 @@ const Transfer = () => {
   ];
 
   return (
-    <div className="grid smd:grid-cols-[1fr_2.5fr_1.5fr] slg:grid-cols-[.9fr_3fr_1fr] lg:grid-cols-[.8fr_3fr_1.1fr] h-[100vh]">
+    <div className="bg-[#ffffff] grid smd:grid-cols-[1fr_2.5fr_1.5fr] slg:grid-cols-[.9fr_3fr_1fr] lg:grid-cols-[.8fr_3fr_1.1fr] h-[100vh]">
       <LeftDash />
       <div>
         <Common />
         <div className="">
-          <div className="flex items-center gap-[8px]">
-            <h1 className="text-[18px] font-semibold ml-[65px]">
+          <div className="flex items-center justify-center smd:justify-start gap-[8px] mt-[25px] smd:mt-[0px]">
+            <h1 className="text-[#8F8F8F] smd:text-[#3F4254] text-[13px] smd:text-[18px] font-semibold smd:ml-[65px]">
               Transfer Money from{" "}
               <span className="text-[#196BFE]">&nbsp; Primary card</span>
             </h1>
@@ -48,8 +48,8 @@ const Transfer = () => {
             <img src={card1} alt="card1" />
           </div>
           <div className="mt-[30px] flex items-center justify-center  gap-[20px]">
-            <div className="flex items-center justify-center gap-[8px] border-2 border-[#E1E3EA] rounded-lg w-[220px] slg:w-[240px] h-[50px]">
-              <h1 className="text-[#3F4254] text-[14px] slg:text-[16px]">
+            <div className="flex items-center justify-center gap-[8px] smd:border-2 border-[#E1E3EA] rounded-lg w-[220px] slg:w-[240px] h-[50px]">
+              <h1 className="text-[#8F8F8F] smd:text-[#3F4254] text-[13px] smd:text-[14px] slg:text-[16px]">
                 Selected Currency{" "}
                 <span className="text-[#196BFE] font-semibold">&nbsp;Euro</span>
               </h1>
@@ -85,7 +85,10 @@ const Transfer = () => {
                 />
               </div>
             </div>
-            <div className="mt-[30px]">
+            <h1 className="mt-[20px] smd:mt-[40px] text-[13px] text-[#8F8F8F]">
+              Transfer to
+            </h1>
+            <div className="mt-[20px]">
               <div className="flex items-center gap-[20px]">
                 {cards.map((card) => (
                   <div

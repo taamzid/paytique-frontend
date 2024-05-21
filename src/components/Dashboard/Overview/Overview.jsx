@@ -39,13 +39,13 @@ const Overview = () => {
   const total = sourceData.reduce((acc, data) => acc + data.value, 0);
 
   return (
-    <div className="grid smd:grid-cols-[1fr_2.5fr_1.5fr] slg:grid-cols-[.9fr_3fr_1fr] lg:grid-cols-[.8fr_3fr_1.1fr] h-[100vh]">
+    <div className="bg-[#ffffff] smd:grid smd:grid-cols-[1fr_2.5fr_1.5fr] slg:grid-cols-[.9fr_3fr_1fr] lg:grid-cols-[.8fr_3fr_1.1fr] h-[100vh]">
       <LeftDash />
       <div className="overflow-y-auto pb-[30px] [&::-webkit-scrollbar]:hidden [-ms-overflow-style]:hidden [scrollbar-width]:hidden">
         <Common />
-        <div className="flex items-center justify-center gap-[20px]">
+        <div className="px-[20px] flex items-center justify-center gap-[10px] smd:gap-[20px] mt-[25px] smd:mt-[0px]">
           <div
-            className={`w-[120px] h-[42px] flex items-center justify-center border rounded-[6px] cursor-pointer ${
+            className={`w-[120px] h-[35px] smd:h-[42px] flex items-center justify-center border rounded-[6px] cursor-pointer ${
               activeButton === "7days"
                 ? "bg-[#196BFE] text-white border-[#196BFE]"
                 : "bg-white text-[#3F4254] border-[#E1E3EA] hover:bg-[#196BFE] hover:text-white"
@@ -55,7 +55,7 @@ const Overview = () => {
             <h1>7 Days</h1>
           </div>
           <div
-            className={`w-[120px] h-[42px] flex items-center justify-center border rounded-[6px] cursor-pointer ${
+            className={`w-[120px] h-[35px] smd:h-[42px] flex items-center justify-center border rounded-[6px] cursor-pointer ${
               activeButton === "1month"
                 ? "bg-[#196BFE] text-white border-[#196BFE]"
                 : "bg-white text-[#3F4254] border-[#E1E3EA] hover:bg-[#196BFE] hover:text-white"
@@ -65,7 +65,7 @@ const Overview = () => {
             <h1>1 Month</h1>
           </div>
           <div
-            className={`w-[120px] h-[42px] flex items-center justify-center border rounded-[6px] cursor-pointer ${
+            className={`w-[120px] h-[35px] smd:h-[42px] flex items-center justify-center border rounded-[6px] cursor-pointer ${
               activeButton === "3months"
                 ? "bg-[#196BFE] text-white border-[#196BFE]"
                 : "bg-white text-[#3F4254] border-[#E1E3EA] hover:bg-[#196BFE] hover:text-white"
@@ -75,7 +75,7 @@ const Overview = () => {
             <h1>3 Months</h1>
           </div>
           <div
-            className={`w-[120px] h-[42px] flex items-center justify-center border rounded-[6px] cursor-pointer ${
+            className={`w-[120px] h-[35px] smd:h-[42px] flex items-center justify-center border rounded-[6px] cursor-pointer ${
               activeButton === "1year"
                 ? "bg-[#196BFE] text-white border-[#196BFE]"
                 : "bg-white text-[#3F4254] border-[#E1E3EA] hover:bg-[#196BFE] hover:text-white"
@@ -139,7 +139,7 @@ const Overview = () => {
             </div> */}
           </div>
         </div>
-        <div>
+        <div className="px-[20px] smd:px-[0px]">
           <div className="flex items-center justify-center">
             <div className="flex items-center justify-between mt-[50px] px-[18px] border border-[#E1E3EA] rounded-[6px] w-[500px] h-[70px] cursor-pointer">
               <div className="flex items-center gap-[10px]">

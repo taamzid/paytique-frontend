@@ -189,23 +189,25 @@ const Profile = () => {
     "border border-[#D9D9D9] block px-2.5 pb-2.5 pt-4 w-full text-sm text-[#3F4254] bg-transparent rounded-lg appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0";
 
   return (
-    <div className="grid smd:grid-cols-[1fr_2.5fr_1.5fr] slg:grid-cols-[.9fr_3fr_1fr] lg:grid-cols-[.8fr_3fr_1.1fr] h-[100vh]">
+    <div className="bg-[#ffffff] grid smd:grid-cols-[1fr_2.5fr_1.5fr] slg:grid-cols-[.9fr_3fr_1fr] lg:grid-cols-[.8fr_3fr_1.1fr] h-[100vh]">
       <LeftDash />
       <div>
         <Common />
-        <div className="px-[30px] slg:mt-[20px]">
-          <div className="mx-auto max-w-[520px] slg:max-w-[720px]">
-            <div className="flex items-center justify-between mb-[40px] ">
-              <div className="flex items-center gap-[16px]">
-                <img src={dp} alt="dp" />
+        <div className="smd:px-[30px] slg:mt-[20px]">
+          <div className="px-[20px] smd:px-[0px] mx-auto max-w-[520px] slg:max-w-[720px]">
+            <div className="flex items-center justify-between mb-[40px] mt-[25px] smd:mt-[0px]">
+              <div className="flex items-center gap-[10px] smd:gap-[16px]">
+                <img src={dp} alt="dp" className="w-[80px] smd:w-[122px]" />
                 <div className="text-[#828282]">
-                  <h1 className="text-[24px] font-semibold">Robert Fox</h1>
-                  <h1 className="font-medium">robert@gmail.com</h1>
+                  <h1 className="smd:text-[24px] font-semibold">Robert Fox</h1>
+                  <h1 className="text-[12px] smd:text-[16px]font-medium">
+                    robert@gmail.com
+                  </h1>
                 </div>
               </div>
               <div
                 onClick={handleEditInformationClick}
-                className="bg-[#E3F2FE] p-[10px] flex items-center justify-center rounded-[6px] cursor-pointer"
+                className="bg-[#E3F2FE] p-[6px] smd:p-[10px] flex items-center justify-center rounded-[6px] cursor-pointer"
               >
                 <h1 className="text-[14px] text-[#196BFE]">
                   {" "}
@@ -217,8 +219,8 @@ const Profile = () => {
 
           <div className="flex items-center justify-center">
             <div>
-              <div className="flex items-center justify-center gap-[20px]">
-                <div class="relative w-[250px] slg:w-[350px]">
+              <div className="smd:flex items-center justify-center gap-[20px]">
+                <div class="relative w-full slg:w-[350px]">
                   <input
                     type="text"
                     id="default_outlined"
@@ -249,7 +251,7 @@ const Profile = () => {
                     />
                   )}
                 </div>
-                <div class="relative w-[250px] slg:w-[350px]">
+                <div class="relative w-[350px] smd:w-full slg:w-[350px] mt-[25px] smd:mt-[0px]">
                   <input
                     type="text"
                     id="default_outlined"
@@ -281,7 +283,7 @@ const Profile = () => {
                   )}
                 </div>
               </div>
-              <div class="relative w-[520px] slg:w-[720px] mt-[20px]">
+              <div class="relative w-full smd:w-[520px] slg:w-[720px] mt-[20px]">
                 <input
                   type="text"
                   id="default_outlined"
@@ -341,8 +343,8 @@ const Profile = () => {
                   </div>
                 </div>
               </div>
-              <div className="flex items-center justify-center gap-[20px] mt-[20px]">
-                <div class="relative w-[250px] slg:w-[350px]">
+              <div className="smd:flex items-center justify-center gap-[20px] mt-[20px]">
+                <div class="relative w-[350px] smd:w-full slg:w-[350px] mt-[25px] smd:mt-[0px">
                   <input
                     type="text"
                     id="default_outlined"
@@ -373,7 +375,7 @@ const Profile = () => {
                     />
                   )}
                 </div>
-                <div class="relative w-[250px] slg:w-[350px]">
+                <div class="relative w-[350px] smd:w-full slg:w-[350px] mt-[25px]">
                   <input
                     type="text"
                     id="default_outlined"
@@ -405,7 +407,7 @@ const Profile = () => {
                   )}
                 </div>
               </div>
-              <div class="relative w-[520px] slg:w-[720px] mt-[20px]">
+              <div class="relative w-full smd:w-[520px] slg:w-[720px] mt-[20px]">
                 <input
                   type="text"
                   id="default_outlined"
@@ -436,8 +438,8 @@ const Profile = () => {
                   />
                 )}
               </div>
-              <div className="flex items-center justify-center gap-[20px] mt-[20px]">
-                <div class="relative w-[250px] slg:w-[350px]">
+              <div className="smd:flex items-center justify-center gap-[20px] mt-[20px]">
+                <div class="relative w-full slg:w-[350px]">
                   <input
                     type="text"
                     id="default_outlined"
@@ -468,7 +470,7 @@ const Profile = () => {
                     />
                   )}
                 </div>
-                <div class="relative w-[250px] slg:w-[350px]">
+                <div class="relative w-[350px] smd:w-full slg:w-[350px] mt-[25px] smd:mt-[0px]">
                   <input
                     type="text"
                     id="default_outlined"
@@ -500,7 +502,7 @@ const Profile = () => {
                   )}
                 </div>
               </div>
-              <div class="relative w-[520px] slg:w-[720px] mt-[20px]">
+              <div class="relative w-full smd:w-[520px] slg:w-[720px] mt-[20px]">
                 <input
                   type="text"
                   id="default_outlined"

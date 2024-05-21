@@ -238,10 +238,10 @@ const Balance = () => {
   };
 
   const sharedStyle =
-    "mt-[20px] pl-[25px] py-[15px] rounded-[20px] cursor-pointer border border-[#828282]  ";
+    "mt-[20px] pl-[10px] smd:pl-[25px] py-[15px] rounded-[20px] cursor-pointer border border-[#828282]  ";
 
   return (
-    <div className="grid smd:grid-cols-[1fr_2.5fr_1.5fr] slg:grid-cols-[.9fr_3fr_1fr] lg:grid-cols-[.8fr_3fr_1.1fr] h-[100vh]">
+    <div className="bg-[#ffffff] smd:grid smd:grid-cols-[1fr_2.5fr_1.5fr] slg:grid-cols-[.9fr_3fr_1fr] lg:grid-cols-[.8fr_3fr_1.1fr] h-[100vh]">
       <LeftDash />
       <div className="overflow-y-auto pb-[40px] [&::-webkit-scrollbar]:hidden [-ms-overflow-style]:hidden [scrollbar-width]:hidden">
         <Common />
@@ -271,21 +271,25 @@ const Balance = () => {
                   {currency.transactions.map((transaction) => (
                     <div
                       key={transaction.id}
-                      className="flex items-center justify-between w-full border-2 h-[60px] px-[16px] rounded-[6px] cursor-pointer mt-[12px]"
+                      className="flex items-center justify-between w-full border-2 h-[60px] px-[10px] smd:px-[16px] rounded-[6px] cursor-pointer mt-[12px]"
                     >
-                      <div className="flex items-center gap-[10px]">
-                        <img src={avatar} alt="avatar" />
+                      <div className="flex items-center gap-[6px] smd:gap-[10px]">
+                        <img
+                          src={avatar}
+                          alt="avatar"
+                          className="w-[30px] smd:w-[36px]"
+                        />
                         <div>
-                          <h1 className="text-[#3F4254] font-medium">
+                          <h1 className="text-[#3F4254] font-medium text-[14px] smd:text-[16px]">
                             {transaction.name}
                           </h1>
-                          <h1 className="text-[12px] text-[#8d8d8f]">
+                          <h1 className="text-[10px] smd:text-[12px] text-[#8d8d8f]">
                             {transaction.date}
                           </h1>
                         </div>
                       </div>
                       <div className="flex items-center gap-[6px]">
-                        <h1 className="text-[#3F4254] font-medium text-[18px]">
+                        <h1 className="text-[#3F4254] font-medium text-[12px] smd:text-[18px]">
                           {transaction.amount}
                         </h1>
                         <div
@@ -293,7 +297,7 @@ const Balance = () => {
                           style={{ backgroundColor: transaction.statusBg }}
                         >
                           <h1
-                            className="w-[48px] h-[20px] text-[10px] font-bold flex items-center justify-center"
+                            className="w-[40px] smd:w-[48px] h-[20px] text-[10px] font-bold flex items-center justify-center"
                             style={{ color: transaction.statusText }}
                           >
                             {transaction.status}

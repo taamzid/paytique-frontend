@@ -9,7 +9,11 @@ import avatar from "../../../assets/dashboard/center/avatar.svg";
 import threedots from "../../../assets/dashboard/center/threedots.svg";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import Common from "./Common";
+import bell from "../../../assets/common/Bell.svg";
+import search from "../../../assets/common/Search.svg";
+import Menu from "../../../assets/common/Menu.svg";
+import mobileLogo from "../../../assets/common/mobileLogo.svg";
+import notif from "../../../assets/dashboard/center/Notif.svg";
 
 const Dash = () => {
   const [activeFeature, setActiveFeature] = useState(null);
@@ -173,7 +177,41 @@ const Dash = () => {
           </div>
         </div>
         <div className="relative smd:hidden">
-          <Common />
+          <div className="px-[20px] block pt-[50px] max-h-[288px] smd:hidden bg-[url('./assets/common/bgMobile.svg')] bg-cover rounded-bl-[30px] rounded-br-[30px]">
+            <div className="flex items-center justify-between">
+              <img src={mobileLogo} alt="mobileLogo" />
+              <img src={Menu} alt="menu" />
+            </div>
+            <div>
+              <div className="pr-[10px] flex items-center justify-between mt-[20px]">
+                <div>
+                  <h1 className="text-medium text-[13px] text-[#ffffff]">
+                    Good Morning,
+                  </h1>
+                  <h1 className="text-semibold text-[23px] text-[#ffffff]">
+                    Robert Fox
+                  </h1>
+                </div>
+                <div className="flex items-center gap-[18px]">
+                  <img src={search} alt="search" className="cursor-pointer" />
+                  <div className="indicator">
+                    <img src={bell} alt="bell" className="cursor-pointer" />
+                    <span className="indicator-item cursor-pointer">
+                      <img
+                        src={notif}
+                        alt="notif"
+                        className="w-[14px] mr-[8px] mt-[5px]"
+                      />
+                    </span>
+                  </div>
+                  <img src={avatar} alt="avatar" />
+                </div>
+              </div>
+              <h1 className="mt-[10px] pb-[80px] text-medium text-[20px] text-[#ffffff]">
+                Balance
+              </h1>
+            </div>
+          </div>
         </div>
         <div className="relative">
           <div className="pl-[20px] smd:hidden">
