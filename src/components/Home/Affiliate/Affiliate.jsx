@@ -4,7 +4,7 @@ import rightImage from "../../../assets/home/affiliate/right.svg";
 const Affiliate = () => {
   return (
     <div>
-      <div className="relative mt-[60px] smd:mt-[80px] mb-[55px] smd:mb-[100px]">
+      <div className="bg-[#ffffff] relative mt-[60px] smd:mt-[80px] mb-[55px] smd:mb-[100px]">
         <div className="hidden smd:block">
           <img
             src={leftImage}

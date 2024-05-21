@@ -133,7 +133,7 @@ const Find = () => {
         alt="c2"
         className="hidden smd:block smd:absolute right-0"
       />
-      <div>
+      <div className="bg-[#ffffff]">
         <div className="mt-[60px] smd:mt-[340px] slg:mt-[400px] lg:mt-[470px] relative">
           <div>
             <h1 className="text-[42px] smd:text-[60px] lg:text-[80px] text-[#1E1E1E] text-center font-SFMedium">
