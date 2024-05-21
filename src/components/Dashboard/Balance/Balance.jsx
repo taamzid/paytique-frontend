@@ -238,7 +238,7 @@ const Balance = () => {
   };
 
   const sharedStyle =
-    "mt-[20px] pl-[10px] smd:pl-[25px] py-[15px] rounded-[20px] cursor-pointer border border-[#828282]  ";
+    "mt-[20px] pl-[10px] pr-[10px] smd:pr-[0px] smd:pl-[25px] py-[15px] rounded-[20px] cursor-pointer border border-[#828282]  ";
 
   return (
     <div className="bg-[#ffffff] smd:grid smd:grid-cols-[1fr_2.5fr_1.5fr] slg:grid-cols-[.9fr_3fr_1fr] lg:grid-cols-[.8fr_3fr_1.1fr] h-[100vh]">
