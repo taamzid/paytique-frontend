@@ -32,7 +32,7 @@ const SignUp = () => {
           Register
         </button>
       </div>
-      <div className="mt-[15vh] smd:mt-[0px] flex items-center justify-center">
+      <div className="bg-[#ffffff] mt-[15vh] smd:mt-[0px] flex items-center justify-center">
         {!isAuthenticated && (
           <button
             onClick={() =>
