@@ -83,7 +83,7 @@ const Withdraw = () => {
               <img src={path} alt="path" className="cursor-pointer" />
             </div>
           </div>
-          <div className="mt-[30px] flex flex-col items-center">
+          <div className="bg-[#ffffff] mt-[30px] flex flex-col items-center">
             <div>
               <div className="flex items-center gap-[28px]">
                 <img
