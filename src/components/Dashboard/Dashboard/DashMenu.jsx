@@ -38,7 +38,7 @@ export const DashMenu = () => {
     "hover:bg-[#E3F2FE] hover:text-[#0790FF] hover:rounded-[12px]";
 
   const sharedStyle =
-    "p-[10px] flex items-center gap-[16px] font-SFSemiBold cursor-pointer";
+    "px-[10px] py-[6px] flex items-center gap-[16px] font-SFSemiBold cursor-pointer";
 
   return (
     <div className="px-[20px] smd:hidden smd:pl-[12px] slg:pl-[32px]">
@@ -73,7 +73,7 @@ export const DashMenu = () => {
         <NavLink
           to="/profile"
           className={({ isActive }) =>
-            `${sharedStyle} ${getSectionClass(isActive)} ${hoverStyle}`
+            `${sharedStyle} ${getSectionClass(isActive)} ${hoverStyle} mt-[10px]`
           }
           onMouseEnter={() => setHoveredSection("profile")}
           onMouseLeave={() => setHoveredSection(null)}
@@ -91,7 +91,7 @@ export const DashMenu = () => {
         <NavLink
           to="/balance"
           className={({ isActive }) =>
-            `${sharedStyle} ${getSectionClass(isActive)} ${hoverStyle}`
+            `${sharedStyle} ${getSectionClass(isActive)} ${hoverStyle} mt-[10px]`
           }
           onMouseEnter={() => setHoveredSection("balance")}
           onMouseLeave={() => setHoveredSection(null)}
@@ -109,7 +109,7 @@ export const DashMenu = () => {
         <NavLink
           to="/offers"
           className={({ isActive }) =>
-            `${sharedStyle} ${getSectionClass(isActive)} ${hoverStyle}`
+            `${sharedStyle} ${getSectionClass(isActive)} ${hoverStyle} mt-[10px]`
           }
           onMouseEnter={() => setHoveredSection("offer")}
           onMouseLeave={() => setHoveredSection(null)}
@@ -125,7 +125,7 @@ export const DashMenu = () => {
         <NavLink
           to="/overview"
           className={({ isActive }) =>
-            `${sharedStyle} ${getSectionClass(isActive)} ${hoverStyle}`
+            `${sharedStyle} ${getSectionClass(isActive)} ${hoverStyle} mt-[10px]`
           }
           onMouseEnter={() => setHoveredSection("overview")}
           onMouseLeave={() => setHoveredSection(null)}
@@ -144,7 +144,7 @@ export const DashMenu = () => {
         <NavLink
           to="/support"
           className={({ isActive }) =>
-            `${sharedStyle} ${getSectionClass(isActive)} ${hoverStyle}`
+            `${sharedStyle} ${getSectionClass(isActive)} ${hoverStyle} mt-[10px]`
           }
           onMouseEnter={() => setHoveredSection("support")}
           onMouseLeave={() => setHoveredSection(null)}
@@ -163,7 +163,7 @@ export const DashMenu = () => {
         <NavLink
           to="/settings"
           className={({ isActive }) =>
-            `${sharedStyle} ${getSectionClass(isActive)} ${hoverStyle}`
+            `${sharedStyle} ${getSectionClass(isActive)} ${hoverStyle} mt-[10px]`
           }
           onMouseEnter={() => setHoveredSection("settings")}
           onMouseLeave={() => setHoveredSection(null)}
@@ -182,7 +182,7 @@ export const DashMenu = () => {
         <NavLink
           to="/qr-code"
           className={({ isActive }) =>
-            `${sharedStyle} ${getSectionClass(isActive)} ${hoverStyle}`
+            `${sharedStyle} ${getSectionClass(isActive)} ${hoverStyle} mt-[10px]`
           }
           onMouseEnter={() => setHoveredSection("qr")}
           onMouseLeave={() => setHoveredSection(null)}
