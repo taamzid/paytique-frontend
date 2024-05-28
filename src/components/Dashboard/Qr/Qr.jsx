@@ -11,7 +11,7 @@ const Qr = () => {
         <Common />
         <div className="mt-[25px] smd:mt-[0px] px-[20px] smd:px-[40px]">
           <div className="bg-[#ffffff] flex-col smd:flex-row flex items-center justify-center gap-[25px]">
-            <img src={qr} alt="qr" />
+            <img src={qr} alt="qr" className="smd:w-[200px] lg:w-[345px]"/>
             <div>
               <div className="border-2 px-4 py-2 rounded-[12px] w-[327px]">
                 <h1 className="font-light text-black">PASS KEY</h1>
