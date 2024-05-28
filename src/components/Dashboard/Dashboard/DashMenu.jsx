@@ -43,12 +43,14 @@ export const DashMenu = () => {
   return (
     <div className="px-[20px] smd:hidden smd:pl-[12px] slg:pl-[32px]">
       <div className="flex flex-col">
-        <div className="mt-[32px] smd:mb-[25px] slg:mb-[35px] flex item-center gap-[10px]">
-          <img src={logo} alt="logo" className="w-[32px] h-[32px]" />
-          <h1 className="font-SFMedium text-[22px] text-[#0790FF]">
-            Paytique Financial
-          </h1>
-        </div>
+        <NavLink to="/dashboard">
+          <div className="mt-[32px] smd:mb-[25px] slg:mb-[35px] flex item-center gap-[10px]">
+            <img src={logo} alt="logo" className="w-[32px] h-[32px]" />
+            <h1 className="font-SFMedium text-[22px] text-[#0790FF]">
+              Paytique Financial
+            </h1>
+          </div>
+        </NavLink>
         <NavLink
           to="/dashboard"
           className={({ isActive }) =>
