@@ -243,9 +243,9 @@ const Balance = () => {
   return (
     <div className="bg-[#ffffff] smd:grid smd:grid-cols-[1fr_2.5fr_1.5fr] slg:grid-cols-[.9fr_3fr_1fr] lg:grid-cols-[.8fr_3fr_1.1fr] h-[100vh]">
       <LeftDash />
-      <div className="bg-[#ffffff] overflow-y-auto pb-[40px] [&::-webkit-scrollbar]:hidden [-ms-overflow-style]:hidden [scrollbar-width]:hidden">
+      <div className="bg-[#ffffff] smd:bg-transparent overflow-y-auto pb-[40px] [&::-webkit-scrollbar]:hidden [-ms-overflow-style]:hidden [scrollbar-width]:hidden">
         <Common />
-        <div className="bg-[#ffffff] px-[20px] slg:px-[40px]">
+        <div className="bg-[#ffffff] smd:bg-transparent px-[20px] slg:px-[40px]">
           {currencies.map((currency, index) => (
             <div
               key={currency.id}
