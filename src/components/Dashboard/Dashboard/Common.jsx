@@ -9,8 +9,8 @@ import search from "../../../assets/common/Search.svg";
 import Menu from "../../../assets/common/Menu.svg";
 import avatar from "../../../assets/common/avatar.svg";
 import { useState } from "react";
-import { LeftDash } from "./LeftDash";
 import { DashMenu } from "./DashMenu";
+import { Link } from "react-router-dom";
 
 const Common = () => {
   const { user, isAuthenticated } = useAuth0();
@@ -67,7 +67,9 @@ const Common = () => {
           <DashMenu />
         </div>
         <div className="flex items-center justify-between">
-          <img src={mobileLogo} alt="mobileLogo" />
+          <Link to="/dashboard">
+            <img src={mobileLogo} alt="mobileLogo" />
+          </Link>
           <img src={Menu} alt="menu" onClick={handleMenuClicked} />
         </div>
         <div>

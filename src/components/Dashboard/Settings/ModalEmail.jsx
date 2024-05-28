@@ -1,11 +1,11 @@
 import React from "react";
 
-const Modal = ({ isOpen, onClose, onConfirm, title, deleteMessage }) => {
+const ModalEmail = ({ isOpen, onClose, onConfirm, title, deleteMessage }) => {
   if (!isOpen) return null;
 
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-      <div className="bg-white px-[20px] py-[30px] rounded-[10px] shadow-lg">
+      <div className="bg-white px-[30px] py-[30px] rounded-[10px] shadow-lg">
         <h2 className="text-[18px] font-semibold text-center">{title}</h2>
 
         <input
@@ -22,7 +22,7 @@ const Modal = ({ isOpen, onClose, onConfirm, title, deleteMessage }) => {
           </button>
           <button
             onClick={onConfirm}
-            className="font-regular px-[20px] py-[10px] bg-red-500 text-white rounded-[5px] hover:bg-red-600"
+            className="font-regular px-[20px] py-[10px] bg-[#196BFE] text-white rounded-[5px] hover:bg-[#196BFE]"
           >
             {deleteMessage}
           </button>
@@ -32,4 +32,4 @@ const Modal = ({ isOpen, onClose, onConfirm, title, deleteMessage }) => {
   );
 };
 
-export default Modal;
+export default ModalEmail;

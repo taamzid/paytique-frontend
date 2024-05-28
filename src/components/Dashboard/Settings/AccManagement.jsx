@@ -54,19 +54,19 @@ const AccManagement = () => {
         </div>
       </div>
       {accOpen && (
-        <div className="flex items-center justify-center gap-[20px] mt-[20px]">
+        <div className="flex items-center justify-center gap-[10px] smd:gap-[20px] mt-[20px]">
           <div
-            className="border rounded-[10px] w-[235px] h-[56px] flex items-center justify-center gap-[10px] cursor-pointer"
+            className="border rounded-[10px] text-[14px] smd:text-[16px] w-[175px] h-[44px] smd:w-[235px] smd:h-[56px] flex items-center justify-center gap-[5px] smd:gap-[10px] cursor-pointer"
             onClick={handleDeactivateClick}
           >
-            <img src={userM} alt="userM" className="w-[24px]" />
+            <img src={userM} alt="userM" className="w-[20px] smd:w-[24px]" />
             <h1 className="text-[#3F4254]">Deactivate Account</h1>
           </div>
           <div
-            className="border rounded-[10px] w-[235px] h-[56px] flex items-center justify-center gap-[10px] cursor-pointer"
+            className="border rounded-[10px] text-[14px] smd:text-[16px] w-[175px] h-[44px] smd:w-[235px] smd:h-[56px] flex items-center justify-center gap-[5px] smd:gap-[10px] cursor-pointer"
             onClick={handleDeleteClick}
           >
-            <img src={userX} alt="user" className="w-[24px]" />
+            <img src={userX} alt="user" className="w-[20px] smd:w-[24px]" />
             <h1 className="text-[#3F4254]">Delete Account</h1>
           </div>
         </div>

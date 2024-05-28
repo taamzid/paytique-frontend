@@ -1,8 +1,10 @@
 import { LeftDash } from "../Dashboard/LeftDash";
 import RightDash from "../Dashboard/RightDash";
 import Common from "../Dashboard/Common";
-import dd from "../../../assets/overview/dd.svg";
 import AccManagement from "./AccManagement";
+import Security from "./Security";
+import AppSettings from "./AppSettings";
+import PrivacyData from "./PrivacyData";
 
 const Settings = () => {
   return (
@@ -12,36 +14,9 @@ const Settings = () => {
         <Common />
         <div className="mt-[25px] smd:mt-[0px] px-[20px] smd:px-[40px]">
           <AccManagement />
-          <div className="flex items-center justify-center">
-            <div className="flex items-center justify-between mt-[20px] px-[18px] border border-[#E1E3EA] rounded-[6px] w-full h-[70px] cursor-pointer">
-              <div className="flex items-center gap-[10px]">
-                <h1 className="text-[#3F4254] text-[18px] font-semibold">
-                  Security
-                </h1>
-              </div>
-              <img src={dd} alt="dd" />
-            </div>
-          </div>
-          <div className="flex items-center justify-center">
-            <div className="flex items-center justify-between mt-[20px] px-[18px] border border-[#E1E3EA] rounded-[6px] w-full h-[70px] cursor-pointer">
-              <div className="flex items-center gap-[10px]">
-                <h1 className="text-[#3F4254] text-[18px] font-semibold">
-                  App Settings
-                </h1>
-              </div>
-              <img src={dd} alt="dd" />
-            </div>
-          </div>
-          <div className="flex items-center justify-center">
-            <div className="flex items-center justify-between mt-[20px] px-[18px] border border-[#E1E3EA] rounded-[6px] w-full h-[70px] cursor-pointer">
-              <div className="flex items-center gap-[10px]">
-                <h1 className="text-[#3F4254] text-[18px] font-semibold">
-                  Privacy & Data
-                </h1>
-              </div>
-              <img src={dd} alt="dd" />
-            </div>
-          </div>
+          <Security />
+          <AppSettings />
+          <PrivacyData />
         </div>
       </div>
       <RightDash />

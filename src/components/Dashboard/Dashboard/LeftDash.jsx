@@ -43,16 +43,18 @@ export const LeftDash = () => {
   return (
     <div className="hidden smd:flex smd:pl-[12px] slg:pl-[32px] shadow-md">
       <div className="flex flex-col">
-        <div className="mt-[32px] smd:mb-[25px] slg:mb-[35px] flex item-center gap-[10px]">
-          <img
-            src={logo}
-            alt="logo"
-            className="smd:h-[32px] slg:h-[35px] smd:w-[26px] slg:w-[35px]"
-          />
-          <h1 className="font-SFMedium text-[22px] text-[#0790FF]">
-            Paytique Financial
-          </h1>
-        </div>
+        <NavLink to="/dashboard">
+          <div className="mt-[32px] smd:mb-[25px] slg:mb-[35px] flex item-center gap-[10px]">
+            <img
+              src={logo}
+              alt="logo"
+              className="smd:h-[32px] slg:h-[35px] smd:w-[26px] slg:w-[35px]"
+            />
+            <h1 className="font-SFMedium text-[22px] text-[#0790FF]">
+              Paytique Financial
+            </h1>
+          </div>
+        </NavLink>
         <NavLink
           to="/dashboard"
           className={({ isActive }) =>
