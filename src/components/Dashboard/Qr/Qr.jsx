@@ -9,8 +9,8 @@ const Qr = () => {
       <LeftDash />
       <div>
         <Common />
-        <div className="bg-[#ffffff] mt-[25px] smd:mt-[0px] px-[20px] smd:px-[40px]">
-          <div className="flex-col smd:flex-row flex items-center justify-center gap-[25px]">
+        <div className="mt-[25px] smd:mt-[0px] px-[20px] smd:px-[40px]">
+          <div className="bg-[#ffffff] flex-col smd:flex-row flex items-center justify-center gap-[25px]">
             <img src={qr} alt="qr" />
             <div>
               <div className="border-2 px-4 py-2 rounded-[12px] w-[327px]">
