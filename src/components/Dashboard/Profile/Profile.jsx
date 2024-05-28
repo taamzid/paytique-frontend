@@ -217,7 +217,7 @@ const Profile = () => {
             </div>
           </div>
 
-          <div className="flex items-center justify-center">
+          <div className="bg-[#ffffff] flex items-center justify-center">
             <div>
               <div className="smd:flex items-center justify-center gap-[20px]">
                 <div class="relative w-full slg:w-[350px]">
