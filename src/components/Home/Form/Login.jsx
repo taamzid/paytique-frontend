@@ -8,7 +8,7 @@ const Login = () => {
   return (
     <div className="bg-[#ffffff] ">
       {/* Left section with image, text, and button */}
-      <div className="flex flex-col items-center justify-center smd:flex smd:items-center smd:justify-center   h-[50vh] bg-[url('./assets/login/loginMobile.svg')] bg-cover smd:bg-[url('./assets/login/loginPcV.svg')] smd:bg-cover bg-center smd:pl-[50px] lg:pl-[60px] smd:pt-[25px] lg:pt-[35px] text-white smd:h-[100vh] ">
+      <div className="flex flex-col items-center justify-center smd:flex smd:items-center smd:justify-center bg-[url('./assets/login/loginMobile.svg')] bg-cover smd:bg-[url('./assets/login/loginPcV.svg')] smd:bg-cover bg-center text-white h-[100vh] smd:h-[100vh]">
         <Link to="/">
           <img src={logo} alt="logo" className="smd:mb-[0px] lg:mb-[40px] " />
         </Link>
@@ -22,22 +22,33 @@ const Login = () => {
         <p className="text-[14px] smd:text-[16px] lg:text-[21px]">
           If you are seeing this than this might be good.
         </p>
-        <p className="hidden smd:block text-[14px] smd:text-[16px] lg:text-[24px] font-SFMedium smd:mt-[70px] lg:mt-[90px]">
-          Don’t Have an Account?{" "}
-        </p>
-        <button className="hidden smd:block bg-[#196BFE] w-[170px] lg:w-[253px] h-[31px] rounded-full mt-[20px] smd:mt-[10px] lg:mt-[20px] text-[14px] font-bold">
-          Register
-        </button>
-        <div className=" mt-[15vh] pb-[28vh] smd:pb-[0px] smd:mt-[0px] flex items-center justify-center">
+        <div className="mt-[30px] smd:mt-[50px] lg:mt-[70px] flex items-center justify-center">
           {!isAuthenticated && (
             <button
               onClick={() => loginWithRedirect()}
-              className="hidden smd:block bg-[#196BFE] w-[170px] lg:w-[253px] h-[31px] rounded-full mt-[20px] smd:mt-[10px] lg:mt-[20px] text-[14px] font-bold"
+              className=" bg-[#196BFE] w-[170px] lg:w-[253px] h-[31px] rounded-full mt-[15px] smd:mt-[10px] lg:mt-[20px] text-[14px] font-bold"
             >
               Sign In
             </button>
           )}
         </div>
+        <p className="mt-[40px] text-[14px] smd:text-[16px] lg:text-[24px] font-SFMedium">
+          Don’t Have an Account?{" "}
+        </p>
+        {!isAuthenticated && (
+          <button
+            onClick={() =>
+              loginWithRedirect({
+                authorizationParams: {
+                  screen_hint: "signup",
+                },
+              })
+            }
+            className=" bg-[#196BFE] w-[170px] lg:w-[253px] h-[31px] rounded-full mt-[10px] text-[14px] font-bold"
+          >
+            Register
+          </button>
+        )}
       </div>
     </div>
   );
