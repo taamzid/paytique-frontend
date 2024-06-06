@@ -1,15 +1,12 @@
+import { useAuth0 } from "@auth0/auth0-react";
 import { Link } from "react-router-dom";
 import card from "../../../assets/login/card.svg";
-import icloud from "../../../assets/login/cloud.svg";
-import google from "../../../assets/login/google.svg";
 import logo from "../../../assets/login/logo.svg";
-import outlook from "../../../assets/login/outlook.svg";
-import { useAuth0 } from "@auth0/auth0-react";
 
 const SignUp = () => {
   const { loginWithRedirect, isAuthenticated } = useAuth0();
   return (
-    <div className="">
+    <div className=" overflow-hidden">
       {/* Left section with image, text, and button */}
       <div className="flex flex-col items-center justify-center smd:flex smd:items-center smd:justify-center bg-[url('./assets/login/loginMobile.svg')] bg-cover smd:bg-[url('./assets/login/loginPcV.svg')] smd:bg-cover bg-center text-white h-[100vh] smd:h-[100vh]">
         <Link to="/">
