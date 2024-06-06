@@ -1,5 +1,5 @@
-import heroImg from "../../../assets/home/hero/heroImg.svg";
 import { Link } from "react-router-dom";
+import heroImg from "../../../assets/home/hero/heroImg.svg";
 
 const Hero = () => {
   return (
@@ -13,7 +13,7 @@ const Hero = () => {
             <h1>Grab the Deal Now!</h1>
           </div>
         </div>
-        <div className="text-[#ffffff] font-SFMedium text-[42px] smd:text-[50px] leading-[45px] smd:leading-[50px] slg:text-[80px] slg:leading-[80px] mt-[50px]">
+        <div className="text-[#ffffff] font-SFMedium text-[42px] smd:text-[50px] leading-[45px] smd:leading-[50px] slg:text-[75px] slg:leading-[80px] mt-[50px]">
           <h1>Get Paid. Anytime,</h1>
           <h1>Anywhere.</h1>
         </div>
@@ -38,7 +38,7 @@ const Hero = () => {
         {/* <div className="text-[#ffffff] smd:text-[18px] lg:text-[20px] font-SFMedium smd:mt-[25px] lg:mt-[50px]">
           <h1>Send Money. The Fastest Way Possible.</h1>
         </div> */}
-        <div className="mt-[35px] relative max-w-[620px]">
+        <div className="mt-[35px] relative max-w-[400px]">
           <div className="mt-[30px] flex justify-between">
             <Link to="signup">
               <button className="border border-[#D9D9D9] rounded-md text-[#ffffff] font-SFRegular text-center w-[180px] smd:w-[200px] h-[43px]">

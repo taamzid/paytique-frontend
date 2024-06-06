@@ -6,7 +6,7 @@ import logo from "../../../assets/login/logo.svg";
 const Login = () => {
   const { loginWithRedirect, isAuthenticated } = useAuth0();
   return (
-    <div className="bg-[#ffffff] ">
+    <div className="bg-[#ffffff]   ">
       {/* Left section with image, text, and button */}
       <div className="flex flex-col items-center justify-center smd:flex smd:items-center smd:justify-center bg-[url('./assets/login/loginMobile.svg')] bg-cover smd:bg-[url('./assets/login/loginPcV.svg')] smd:bg-cover bg-center text-white h-[100vh] smd:h-[100vh]">
         <Link to="/">
