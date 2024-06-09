@@ -211,7 +211,7 @@ const Dash = () => {
                     Good Morning,
                   </h1>
                   <h1 className="text-semibold text-[23px] text-[#ffffff]">
-                    {user?.name}
+                    {user?.given_name}
                   </h1>
                 </div>
                 <div className="flex items-center gap-[18px]">
@@ -249,57 +249,6 @@ const Dash = () => {
           </div>
         </div>
         <div className="relative">
-          {/* <div className="pl-[20px] smd:hidden">
-            <div className="absolute top-[-66%]">
-              <div className="flex gap-[7px]">
-                <div className="slg:mb-[25px] cursor-pointer">
-                  <div className="bg-[#ffffff] shadow-sm pt-[8px] slg:pt-[22px] pb-[6px] slg:pb-[18px] px-[8px] slg:px-[15px] rounded-tl-[10px] rounded-tr-[60px] slg:rounded-tr-[100px] w-[110px] slg:w-[170px]">
-                    <img
-                      src={usa}
-                      alt="usa"
-                      className="w-[32px] slg:w-[65px] h-[22px] slg:h-[41px]"
-                    />
-                    <h1 className="text-[#2356B2] text-[11px] mt-[15px] font-light">
-                      US Dollar
-                    </h1>
-                    <h1 className="text-[18px] slg:text-[25px] font-semibold text-[#2356B2]">
-                      $8224.50
-                    </h1>
-                  </div>
-                </div>
-                <div className="mb-[15px] slg:mb-[25px] cursor-pointer">
-                  <div className="bg-[#ffffff] shadow-sm pt-[8px] slg:pt-[22px] pb-[6px] slg:pb-[18px] px-[8px] slg:px-[15px] rounded-tl-[10px] rounded-tr-[60px] slg:rounded-tr-[100px] w-[110px] slg:w-[170px]">
-                    <img
-                      src={ca}
-                      alt="ca"
-                      className="w-[33px] slg:w-[65px] h-[22px] slg:h-[41px]"
-                    />
-                    <h1 className="text-[#2356B2] text-[11px] mt-[15px] font-light">
-                      Canadian Dollar
-                    </h1>
-                    <h1 className="text-[18px] slg:text-[25px] font-semibold text-[#2356B2]">
-                      C$8224.50
-                    </h1>
-                  </div>
-                </div>
-                <div className="mb-[15px] slg:mb-[25px] cursor-pointer">
-                  <div className="bg-[#ffffff] shadow-sm pt-[8px] slg:pt-[22px] pb-[6px] slg:pb-[18px] px-[8px] slg:px-[15px] rounded-tl-[10px] rounded-tr-[60px] slg:rounded-tr-[100px] w-[110px] slg:w-[170px]">
-                    <img
-                      src={euro}
-                      alt="euro"
-                      className="w-[33px] slg:w-[65px] h-[22px] slg:h-[41px]"
-                    />
-                    <h1 className="text-[#2356B2] text-[11px] mt-[15px] font-light">
-                      Euro
-                    </h1>
-                    <h1 className="text-[18px] slg:text-[25px] font-semibold text-[#2356B2]">
-                      €8224.50
-                    </h1>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div> */}
           <div className="mt-[-60px] pl-[20px] mr-[20px] smd:hidden">
             <div className="">
               <div className="flex gap-[7px] overflow-auto bWidth bTrack bThumb">
