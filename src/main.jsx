@@ -9,8 +9,8 @@ const domain = "paytique.us.auth0.com";
 const clientId = "Lf57nQnjJIz4zN0hzcC2bdW8WRpJxvE5";
 
 //dev
-// const domain = "tamzid.us.auth0.com";
-// const clientId = "myHhzPMD7RMB8enKjAWleJwYlXsmOlNs";
+// const domain = "fomo-upwork.us.auth0.com";
+// const clientId = "GfYtsDx84NbVOIdsATRPNNqkB7h45VaM";
 
 const redirectUri = `${window.location.origin}/dashboard`;
 

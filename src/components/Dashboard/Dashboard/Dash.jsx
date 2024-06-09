@@ -15,12 +15,14 @@ import Menu from "../../../assets/common/Menu.svg";
 import mobileLogo from "../../../assets/common/mobileLogo.svg";
 import notif from "../../../assets/dashboard/center/Notif.svg";
 import { DashMenu } from "./DashMenu";
+import { useAuth0 } from "@auth0/auth0-react";
 
 const Dash = () => {
   const [activeFeature, setActiveFeature] = useState(null);
   const [hoveredFeature, setHoveredFeature] = useState(null);
 
   const [menuClicked, setMenuClicked] = useState(false);
+  const { user, isAuthenticated } = useAuth0();
 
   const handleMenuClicked = () => {
     setMenuClicked((prev) => !prev);
@@ -224,7 +226,20 @@ const Dash = () => {
                       />
                     </span>
                   </div>
-                  <img src={avatar} alt="avatar" />
+                  {/* <img src={avatar} alt="avatar" /> */}
+                  {isAuthenticated && (
+                    <Link to="/profile">
+                      <div>
+                        {user?.picture && (
+                          <img
+                            src={user.picture}
+                            alt={user?.name}
+                            className="rounded-full w-[36px]"
+                          />
+                        )}
+                      </div>
+                    </Link>
+                  )}
                 </div>
               </div>
               <h1 className="mt-[10px] pb-[80px] text-medium text-[20px] text-[#ffffff]">
