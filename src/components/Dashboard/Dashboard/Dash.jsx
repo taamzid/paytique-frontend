@@ -40,7 +40,7 @@ const Dash = () => {
         <div className="px-[20px] slg:px-[40px]">
           <div className="hidden smd:block bg-[url('./assets/dashboard/center/card.svg')] rounded-bl-[20px] rounded-br-[20px] lg:rounded-br-[40px] slg:rounded-bl-[40px] bg-cover">
             <h1 className="text-[#ffffff] slg:text-[24px] font-semibold ml-[20px] slg:ml-[45px] pt-[20px] slg:pt-[45px]">
-              Good Morning, Robert Fox
+              Good Morning, {user?.name}
             </h1>
             <h1 className="text-[#ffffff] text-[18px] font-semibold ml-[20px] slg:ml-[45px] pt-[10px] slg:pt-[30px]">
               Balance
@@ -211,7 +211,7 @@ const Dash = () => {
                     Good Morning,
                   </h1>
                   <h1 className="text-semibold text-[23px] text-[#ffffff]">
-                    Robert Fox
+                    {user?.name}
                   </h1>
                 </div>
                 <div className="flex items-center gap-[18px]">

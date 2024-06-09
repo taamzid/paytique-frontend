@@ -79,7 +79,7 @@ const Common = () => {
                 Good Morning,
               </h1>
               <h1 className="text-semibold text-[23px] text-[#ffffff]">
-                Robert Fox
+                {user?.name}
               </h1>
             </div>
             <div className="flex items-center gap-[18px]">
@@ -94,7 +94,17 @@ const Common = () => {
                   />
                 </span>
               </div>
-              <img src={avatar} alt="avatar" />
+              {isAuthenticated && (
+                <div>
+                  {user?.picture && (
+                    <img
+                      src={user.picture}
+                      alt={user?.name}
+                      className="rounded-full w-[36px]"
+                    />
+                  )}
+                </div>
+              )}
             </div>
           </div>
         </div>
