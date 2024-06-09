@@ -312,6 +312,21 @@ const Dash = () => {
                     </h1>
                   </div>
                 </div>
+                <div className="slg:mb-[25px] cursor-pointer">
+                  <div className="bg-[#ffffff] shadow-sm pt-[8px] slg:pt-[22px] pb-[6px] slg:pb-[18px] px-[8px] slg:px-[15px] rounded-tl-[10px] rounded-tr-[60px] slg:rounded-tr-[100px] w-[110px] slg:w-[170px]">
+                    <img
+                      src={usa}
+                      alt="usa"
+                      className="w-[32px] slg:w-[65px] h-[22px] slg:h-[41px]"
+                    />
+                    <h1 className="text-[#2356B2] text-[11px] mt-[15px] font-light">
+                      US Dollar
+                    </h1>
+                    <h1 className="text-[18px] slg:text-[25px] font-semibold text-[#2356B2]">
+                      $8224.50
+                    </h1>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
