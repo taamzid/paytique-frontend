@@ -79,7 +79,7 @@ const Common = () => {
                 Good Morning,
               </h1>
               <h1 className="text-semibold text-[23px] text-[#ffffff]">
-                {user?.name}
+                {user?.given_name}
               </h1>
             </div>
             <div className="flex items-center gap-[18px]">
