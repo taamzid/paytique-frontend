@@ -7,7 +7,7 @@ import w0 from "../../../assets/dashboard/center/w0.svg";
 import w1 from "../../../assets/dashboard/center/w1.svg";
 import avatar from "../../../assets/dashboard/center/avatar.svg";
 import threedots from "../../../assets/dashboard/center/threedots.svg";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import bell from "../../../assets/common/Bell.svg";
 import search from "../../../assets/common/Search.svg";
@@ -22,11 +22,61 @@ const Dash = () => {
   const [hoveredFeature, setHoveredFeature] = useState(null);
 
   const [menuClicked, setMenuClicked] = useState(false);
+  const [isSearchFormVisible, setIsSearchFormVisible] = useState(false);
+  const [isNotifVisible, setIsNotifVisible] = useState(false);
+  const searchFormRef = useRef(null);
+  const notifRef = useRef(null);
+
   const { user, isAuthenticated } = useAuth0();
 
   const handleMenuClicked = () => {
     setMenuClicked((prev) => !prev);
   };
+
+  const handleSearchClick = () => {
+    setIsSearchFormVisible(true);
+  };
+
+  const handleMouseEnter = () => {
+    setIsSearchFormVisible(true);
+  };
+
+  const handleNotifClick = () => {
+    setIsNotifVisible((prev) => !prev);
+  };
+
+  const handleMouseLeave = (event) => {
+    if (
+      searchFormRef.current &&
+      !searchFormRef.current.contains(event.relatedTarget)
+    ) {
+      setIsSearchFormVisible(false);
+    }
+  };
+
+  const handleClickOutside = (event) => {
+    if (
+      searchFormRef.current &&
+      !searchFormRef.current.contains(event.target)
+    ) {
+      setIsSearchFormVisible(false);
+    }
+    if (notifRef.current && !notifRef.current.contains(event.target)) {
+      setIsNotifVisible(false);
+    }
+  };
+
+  useEffect(() => {
+    if (isSearchFormVisible || isNotifVisible) {
+      document.addEventListener("mousedown", handleClickOutside);
+    } else {
+      document.removeEventListener("mousedown", handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [isSearchFormVisible, isNotifVisible]);
 
   const sharedStyle0 =
     "h-[80px] smd:w-[133px] slg:w-[156px] smd:h-[120px] slg:h-[156px] flex items-center justify-center border border-[#CBE5FB] rounded-xl cursor-pointer";
@@ -40,7 +90,7 @@ const Dash = () => {
         <div className="px-[20px] slg:px-[40px]">
           <div className="hidden smd:block bg-[url('./assets/dashboard/center/card.svg')] rounded-bl-[20px] rounded-br-[20px] lg:rounded-br-[40px] slg:rounded-bl-[40px] bg-cover">
             <h1 className="text-[#ffffff] slg:text-[24px] font-semibold ml-[20px] slg:ml-[45px] pt-[20px] slg:pt-[45px]">
-              Good Morning, {user?.name}
+              Good Morning, {user?.given_name}
             </h1>
             <h1 className="text-[#ffffff] text-[18px] font-semibold ml-[20px] slg:ml-[45px] pt-[10px] slg:pt-[30px]">
               Balance
@@ -215,9 +265,22 @@ const Dash = () => {
                   </h1>
                 </div>
                 <div className="flex items-center gap-[18px]">
-                  <img src={search} alt="search" className="cursor-pointer" />
+                  {!isSearchFormVisible && (
+                    <img
+                      src={search}
+                      alt="search"
+                      className="cursor-pointer"
+                      onClick={handleSearchClick}
+                      onMouseEnter={handleMouseEnter}
+                    />
+                  )}
                   <div className="indicator">
-                    <img src={bell} alt="bell" className="cursor-pointer" />
+                    <img
+                      src={bell}
+                      alt="bell"
+                      className="cursor-pointer"
+                      onClick={handleNotifClick}
+                    />
                     <span className="indicator-item cursor-pointer">
                       <img
                         src={notif}
@@ -233,7 +296,7 @@ const Dash = () => {
                         {user?.picture && (
                           <img
                             src={user.picture}
-                            alt={user?.name}
+                            alt="img"
                             className="rounded-full w-[36px]"
                           />
                         )}
@@ -242,9 +305,84 @@ const Dash = () => {
                   )}
                 </div>
               </div>
-              <h1 className="mt-[10px] pb-[80px] text-medium text-[20px] text-[#ffffff]">
-                Balance
-              </h1>
+              <div className="flex items-center justify-between">
+                <h1 className="mt-[10px] pb-[80px] text-medium text-[20px] text-[#ffffff]">
+                  Balance
+                </h1>
+                {isSearchFormVisible && (
+                  <form
+                    ref={searchFormRef}
+                    className="w-[70%] smd:w-[42%] lg:w-[30%] mx-auto pb-[70px] mr-[7px]"
+                    onMouseLeave={handleMouseLeave}
+                  >
+                    <label
+                      htmlFor="default-search"
+                      className="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white"
+                    >
+                      Search
+                    </label>
+                    <div className="relative">
+                      <div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                        <svg
+                          className="w-4 h-4 text-gray-500 dark:text-gray-400"
+                          aria-hidden="true"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            stroke="currentColor"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth="2"
+                            d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+                          />
+                        </svg>
+                      </div>
+                      <input
+                        type="search"
+                        id="default-search"
+                        className="block w-full h-[35px] px-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        placeholder="Search"
+                        required
+                      />
+                      <button
+                        type="submit"
+                        className="text-white absolute h-[27px] top-1 end-2.5 bottom-1 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-[12px] text-sm px-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                      >
+                        Search
+                      </button>
+                    </div>
+                  </form>
+                )}
+                {isNotifVisible && (
+                  <div
+                    ref={notifRef}
+                    className="z-[100] absolute top-[170px] smd:top-[35px] right-[0px] bg-[#f4f6f7] shadow-md rounded-lg p-4 text-[14px] smd:text-[16px] w-[270px] smd:w-[300px] slg:w-[400px]"
+                  >
+                    <div className="text-gray-800 pb-[10px]">
+                      <h2 className="text-[18px] smd:text-[24px] font-semibold">
+                        Notifications
+                      </h2>
+                      <ul>
+                        <li className="mt-4 bg-[#ffffff] p-3 rounded-lg font-semibold shadow-sm cursor-pointer hover:bg-[#e9ebd9]">
+                          <span className="text-[#7091c6]">Received</span> $50
+                          from <span className="text-[#196BFE]">John Doe</span>
+                        </li>
+                        <li className="mt-2 bg-[#ffffff] p-3 rounded-lg font-semibold shadow-sm cursor-pointer hover:bg-[#e9ebd9]">
+                          <span className="text-success">Successfully</span>{" "}
+                          transfered $20 to{" "}
+                          <span className="text-[#196BFE]">James Doe</span>
+                        </li>
+                        <li className="mt-2 bg-[#ffffff] p-3 rounded-lg font-semibold shadow-sm cursor-pointer hover:bg-[#e9ebd9]">
+                          Payment <span className="text-error">failed</span> $50
+                          to <span className="text-[#196BFE]">Paytique</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                )}
+              </div>
             </div>
           </div>
         </div>
@@ -330,7 +468,7 @@ const Dash = () => {
               </div>
             </div>
           </div>
-          <h1 className="px-[20px] slg:px-[40px] text-[20px] font-bold text-[#0D0D0D] mt-[50px] smd:mt-[32px]">
+          <h1 className="px-[20px] slg:px-[40px] text-[20px] font-bold text-[#0D0D0D] mt-[20px] smd:mt-[32px]">
             Our features
           </h1>
           <div className="px-[20px] slg:px-[40px] mt-[22px] grid grid-cols-4 smd:flex items-center justify-center smd:justify-normal gap-[15px]">
