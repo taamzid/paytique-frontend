@@ -218,9 +218,18 @@ const Common = () => {
                   className="z-[100] absolute top-[170px] smd:top-[35px] right-[0px] bg-[#f4f6f7] shadow-md rounded-lg p-4 text-[14px] smd:text-[16px] w-[270px] smd:w-[300px] slg:w-[400px]"
                 >
                   <div className="text-gray-800 pb-[10px]">
-                    <h2 className="text-[18px] smd:text-[24px] font-semibold">
-                      Notifications
-                    </h2>
+                    <div className="flex items-center justify-between">
+                      <h2 className="text-[18px] smd:text-[24px] font-semibold">
+                        Notifications
+                      </h2>
+                      <h1
+                        className="font-bold cursor-pointer"
+                        onClick={handleNotifClose}
+                      >
+                        <FaMixer />
+                      </h1>
+                    </div>
+
                     <ul>
                       <li className="mt-4 bg-[#ffffff] p-3 rounded-lg font-semibold shadow-sm cursor-pointer hover:bg-[#e9ebd9]">
                         <span className="text-[#7091c6]">Received</span> $50
