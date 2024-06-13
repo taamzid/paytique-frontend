@@ -40,20 +40,20 @@ const RightDash = () => {
           <img src={eye} alt="eye" />
         </div>
         <div className="mt-[40px] smd:mt-[64px] flex items-center justify-center gap-[15px] mb-[50px] cursor-pointer">
-          <div className="flex items-center  justify-center bg-[#196BFE] font-SFMedium rounded-full w-[120px] smd:w-[167px] h-[40px] smd:h-[53px]">
-            <Link to="/add-cards">
+          <Link to="/add-cards">
+            <div className="flex items-center  justify-center bg-[#196BFE] font-SFMedium rounded-full w-[120px] smd:w-[167px] h-[40px] smd:h-[53px]">
               <h1 className="text-center text-[#ffffff] text-[14px] smd:text-[16px]">
                 Edit cards
               </h1>
-            </Link>
-          </div>
-          <div className="flex items-center  justify-center bg-[#196BFE] font-SFMedium rounded-full w-[120px] smd:w-[167px] h-[40px] smd:h-[53px] cursor-pointer">
-            <Link to="/overview">
+            </div>
+          </Link>
+          <Link to="/overview">
+            <div className="flex items-center  justify-center bg-[#196BFE] font-SFMedium rounded-full w-[120px] smd:w-[167px] h-[40px] smd:h-[53px] cursor-pointer">
               <h1 className="text-center text-[#ffffff] text-[14px] smd:text-[16px]">
                 Overview
               </h1>
-            </Link>
-          </div>
+            </div>
+          </Link>
         </div>
       </div>
     </div>
