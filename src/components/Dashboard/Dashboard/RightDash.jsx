@@ -2,6 +2,7 @@ import rightArrow from "../../../assets/dashboard/right/rightArrow.svg";
 import card1 from "../../../assets/dashboard/right/card1.svg";
 import card2 from "../../../assets/dashboard/right/card2.svg";
 import eye from "../../../assets/dashboard/right/Eye.svg";
+import { Link } from "react-router-dom";
 
 const RightDash = () => {
   return (
@@ -40,12 +41,18 @@ const RightDash = () => {
         </div>
         <div className="mt-[40px] smd:mt-[64px] flex items-center justify-center gap-[15px] mb-[50px] cursor-pointer">
           <div className="flex items-center  justify-center bg-[#196BFE] font-SFMedium rounded-full w-[120px] smd:w-[167px] h-[40px] smd:h-[53px]">
-            <h1 className="text-center text-[#ffffff] text-[14px] smd:text-[16px]">
-              Edit cards
-            </h1>
+            <Link to="/add-cards">
+              <h1 className="text-center text-[#ffffff] text-[14px] smd:text-[16px]">
+                Edit cards
+              </h1>
+            </Link>
           </div>
           <div className="flex items-center  justify-center bg-[#196BFE] font-SFMedium rounded-full w-[120px] smd:w-[167px] h-[40px] smd:h-[53px] cursor-pointer">
-            <h1 className="text-center text-[#ffffff] text-[14px] smd:text-[16px]">Overview</h1>
+            <Link to="/overview">
+              <h1 className="text-center text-[#ffffff] text-[14px] smd:text-[16px]">
+                Overview
+              </h1>
+            </Link>
           </div>
         </div>
       </div>

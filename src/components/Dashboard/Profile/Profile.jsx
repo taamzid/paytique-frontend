@@ -316,7 +316,7 @@ const Profile = () => {
               </div>
               <div>
                 <h1 className="text-[#3F4254] text-[18px] font-semibold text-center mt-[20px] mb-[15px]">
-                  Card Info
+                  Edit Cards
                 </h1>
                 <div className="flex items-end justify-center gap-[70px]">
                   <div>

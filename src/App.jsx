@@ -16,6 +16,7 @@ import Overview from "./components/Dashboard/Overview/Overview";
 import Offer from "./components/Dashboard/Offer/Offer";
 import Balance from "./components/Dashboard/Balance/Balance";
 import Profile from "./components/Dashboard/Profile/Profile";
+import AddCards from "./components/Dashboard/Dashboard/AddCards";
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
           <Route path="/withdraw" element={<Withdraw />} />
           <Route path="/transfer" element={<Transfer />} />
           <Route path="/request" element={<Request />} />
+          <Route path="/add-cards" element={<AddCards />} />
         </Routes>
       </Router>
     </>

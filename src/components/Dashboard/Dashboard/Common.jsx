@@ -7,9 +7,10 @@ import Search from "../../../assets//dashboard/center/Search.svg";
 import bell from "../../../assets/common/Bell.svg";
 import search from "../../../assets/common/Search.svg";
 import Menu from "../../../assets/common/Menu.svg";
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import { DashMenu } from "./DashMenu";
 import { Link } from "react-router-dom";
+import { FaMixer } from "react-icons/fa6";
 
 const Common = () => {
   const { user, isAuthenticated } = useAuth0();
@@ -23,50 +24,17 @@ const Common = () => {
     setMenuClicked((prev) => !prev);
   };
 
-  const handleSearchClick = () => {
-    setIsSearchFormVisible(true);
-  };
-
-  const handleMouseEnter = () => {
-    setIsSearchFormVisible(true);
-  };
-
   const handleNotifClick = () => {
     setIsNotifVisible((prev) => !prev);
   };
 
-  const handleMouseLeave = (event) => {
-    if (
-      searchFormRef.current &&
-      !searchFormRef.current.contains(event.relatedTarget)
-    ) {
-      setIsSearchFormVisible(false);
-    }
+  const handleNotifClose = () => {
+    setIsNotifVisible(false);
   };
 
-  const handleClickOutside = (event) => {
-    if (
-      searchFormRef.current &&
-      !searchFormRef.current.contains(event.target)
-    ) {
-      setIsSearchFormVisible(false);
-    }
-    if (notifRef.current && !notifRef.current.contains(event.target)) {
-      setIsNotifVisible(false);
-    }
+  const handleSearchClick = () => {
+    setIsSearchFormVisible((prev) => !prev);
   };
-
-  useEffect(() => {
-    if (isSearchFormVisible || isNotifVisible) {
-      document.addEventListener("mousedown", handleClickOutside);
-    } else {
-      document.removeEventListener("mousedown", handleClickOutside);
-    }
-
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  }, [isSearchFormVisible, isNotifVisible]);
 
   return (
     <div>
@@ -87,63 +55,59 @@ const Common = () => {
               </div>
             </div>
 
-            {isSearchFormVisible && (
-              <form
-                ref={searchFormRef}
-                className="w-[42%] lg:w-[30%] mx-auto mr-[10px]"
-                onMouseLeave={handleMouseLeave}
+            <form
+              ref={searchFormRef}
+              className="w-[42%] lg:w-[30%] mx-auto mr-[10px]"
+            >
+              <label
+                htmlFor="default-search"
+                className="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white"
               >
-                <label
-                  htmlFor="default-search"
-                  className="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white"
+                Search
+              </label>
+              <div className="relative">
+                <div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                  <svg
+                    className="w-4 h-4 text-gray-500 dark:text-gray-400"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+                    />
+                  </svg>
+                </div>
+                <input
+                  type="search"
+                  id="default-search"
+                  className="block w-full h-[40px] px-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  placeholder="Search"
+                  required
+                />
+                <button
+                  type="submit"
+                  className="text-white absolute h-[25px] top-2 end-2.5 bottom-2 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-[12px] text-sm px-2 pb-[1px] dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                 >
                   Search
-                </label>
-                <div className="relative">
-                  <div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
-                    <svg
-                      className="w-4 h-4 text-gray-500 dark:text-gray-400"
-                      aria-hidden="true"
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 20 20"
-                    >
-                      <path
-                        stroke="currentColor"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
-                      />
-                    </svg>
-                  </div>
-                  <input
-                    type="search"
-                    id="default-search"
-                    className="block w-full h-[40px] px-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                    placeholder="Search"
-                    required
-                  />
-                  <button
-                    type="submit"
-                    className="text-white absolute h-[25px] top-2 end-2.5 bottom-2 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-[12px] text-sm px-2 pb-[1px] dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                  >
-                    Search
-                  </button>
-                </div>
-              </form>
-            )}
+                </button>
+              </div>
+            </form>
 
             <div className="flex items-center gap-[18px] indicator">
-              {!isSearchFormVisible && (
+              {/* {!isSearchFormVisible && (
                 <img
                   src={Search}
                   alt="search"
                   className="cursor-pointer"
                   onClick={handleSearchClick}
-                  onMouseEnter={handleMouseEnter}
                 />
-              )}
+              )} */}
               <div onClick={handleNotifClick}>
                 <img src={Bell} alt="bell" className="cursor-pointer" />
                 <span className="indicator-item cursor-pointer">
@@ -157,12 +121,20 @@ const Common = () => {
               {isNotifVisible && (
                 <div
                   ref={notifRef}
-                  className="z-[100] absolute top-[35px] right-[0px] bg-[#f4f6f7] shadow-md rounded-lg p-4 smd:w-[300px] slg:w-[400px]"
+                  className="z-[100] absolute top-[35px] right-[0px] bg-[#f4f6f7] shadow-md rounded-lg p-4 smd:w-[300px] slg:w-[400px] smd:mt-[10px]"
                 >
                   <div className="text-gray-800 pb-[10px]">
-                    <h2 className="smd:text-[24px] font-semibold">
-                      Notifications
-                    </h2>
+                    <div className="flex items-center justify-between">
+                      <h2 className="smd:text-[24px] font-semibold">
+                        Notifications
+                      </h2>
+                      <h1
+                        className="font-bold cursor-pointer"
+                        onClick={handleNotifClose}
+                      >
+                        <FaMixer />
+                      </h1>
+                    </div>
                     <ul>
                       <li className="mt-4 bg-[#ffffff] p-3 rounded-lg font-semibold shadow-sm cursor-pointer hover:bg-[#e9ebd9]">
                         <span className="text-[#7091c6]">Received</span> $50
@@ -222,7 +194,6 @@ const Common = () => {
                   alt="search"
                   className="cursor-pointer"
                   onClick={handleSearchClick}
-                  onMouseEnter={handleMouseEnter}
                 />
               )}
               <div className="indicator">
@@ -286,7 +257,6 @@ const Common = () => {
             <form
               ref={searchFormRef}
               className="w-[80%] smd:w-[42%] lg:w-[30%] mx-auto pb-[10px]"
-              onMouseLeave={handleMouseLeave}
             >
               <label
                 htmlFor="default-search"
